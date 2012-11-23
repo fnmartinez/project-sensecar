@@ -15,3 +15,12 @@
 *.exe
 *.out
 *.app
+
+# Miscelaneous Editor's Temporary Files
+*~
+
+# Eclipse files & folders
+*.cproject*
+*.project*
+.settings/
+.settings
