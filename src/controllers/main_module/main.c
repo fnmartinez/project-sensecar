@@ -36,10 +36,6 @@ boolean command_recieved(void) {
 	return false;
 }
 
-boolean sensors_changed(void) {
-	return false;
-}
-
 void execute_cmd(void) {
 
 }

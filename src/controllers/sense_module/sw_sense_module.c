@@ -6,6 +6,13 @@
 
 #include "../headers/sense_module/sw_sense_module.h"
 
-void read_sensors(void) {
 
+void init_sensors(void) {
+	SWS_DDR = INPUT;
+}
+
+void read_sensors(void) {
+	switch_t sws;
+	uint32_t i;
+	sws = SWS_NONE ^ SWS_PIN;
 }

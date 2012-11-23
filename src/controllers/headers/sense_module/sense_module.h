@@ -11,5 +11,7 @@
 
 void init_sensors(void);
 void read_sensors(void);
+boolean sensors_changed(void);
+
 
 #endif /* SENSE_MODULE_H_ */

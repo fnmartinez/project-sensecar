@@ -13,8 +13,6 @@
 command_t command_fetched;
 
 void init(void);
-boolean command_recieved(void);
-boolean sensors_changed(void);
 void execute_cmd(void);
 
 #endif /* MAIN_H_ */

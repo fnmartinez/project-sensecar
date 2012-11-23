@@ -11,6 +11,7 @@
 
 void checkout_cmd();
 void communicate_changes(void);
+boolean command_recieved(void);
 
 
 #endif /* COMM_MODULE_H_ */
