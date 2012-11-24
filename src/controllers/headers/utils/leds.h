@@ -24,7 +24,7 @@
 #define LED_FOURTH 	0x08     /* 0 0 0 0 1 0 0 0 */
 #define LED_FIFTH 	0x10     /* 0 0 0 1 0 0 0 0 */
 #define LED_SIXTH 	0x20     /* 0 0 1 0 0 0 0 0 */
-#define LED_SEVENTH 0x40     /* 0 1 0 0 0 0 0 0 */
+#define LED_SEVENTH 0x40    /* 0 1 0 0 0 0 0 0 */
 #define LED_EIGHT 	0x80     /* 1 0 0 0 0 0 0 0 */
 #define LED_ALL		0xFF     /* 1 1 1 1 1 1 1 1 */
 
@@ -41,7 +41,7 @@ char leds[] = {
 		LED_NONE
 };
 
-volatile char led_status = 0x00;
+volatile char led_status;
 
 void change_leds();
 void led_on(unsigned char led);

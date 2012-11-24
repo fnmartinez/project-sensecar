@@ -42,6 +42,4 @@ switch_t switches[] = {
 	SWS_EIGHT
 };
 
-#define INPUT 0x00
-
 #endif /* SWITCHES_H_ */
