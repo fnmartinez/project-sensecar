@@ -1,0 +1,14 @@
+package ctrl_module;
+
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.net.Socket;
+
+public class CtrlClient implements Runnable {
+
+	Socket socket;
+	ObjectOutputStream out;
+	ObjectInputStream in;
+	
+	
+}

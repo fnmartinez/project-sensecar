@@ -1,0 +1,48 @@
+package main_module;
+
+import info_module.InfoModule;
+
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
+
+import utils.Message;
+
+public class MainModule {
+
+	private BlockingQueue<Message> messages;
+	
+	public MainModule() {
+		this.messages = new LinkedBlockingQueue<>();
+	}
+	
+	public void addMessage(Message message) {
+		try {
+			this.messages.put(message);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public Message getMessage() {
+		Message message = null;
+		try {
+			message = this.messages.take();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return message;
+	}
+	
+//	public static void main(String[] args) {
+//		while(true) {
+//			MainModule mainModule = new MainModule();
+//			Message message = mainModule.getMessage();
+//		}
+//		
+//	}
+	public static void main(String[] args) {
+		InfoModule info = new InfoModule();
+	}
+}

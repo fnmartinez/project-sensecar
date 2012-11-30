@@ -1,0 +1,70 @@
+package info_module;
+
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class InfoModule {
+
+	private ServerSocket socket;
+	private Socket connection = null;
+	private ObjectOutputStream out;
+	private ObjectInputStream in;
+	private int serverPort = 2000;
+	
+
+	private void run() {
+		try {
+			// 1. creating a server socket
+			socket = new ServerSocket(serverPort);
+			// 2. Wait for connection
+			System.out.println("Waiting for connection");
+			connection = socket.accept();
+			System.out.println("Connection received from "
+					+ connection.getInetAddress().getHostName());
+			// 3. get Input and Output streams
+			out = new ObjectOutputStream(connection.getOutputStream());
+			out.flush();
+			in = new ObjectInputStream(connection.getInputStream());
+			sendMessage("Connection successful");
+			// 4. The two parts communicate via the input and output streams
+			do {
+				sendMessage("bye");
+				try {
+					Thread.sleep(5000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			} while (!Thread.interrupted());
+		} catch (IOException ioException) {
+			ioException.printStackTrace();
+		} finally {
+			// 4: Closing connection
+			try {
+				in.close();
+				out.close();
+				socket.close();
+			} catch (IOException ioException) {
+				ioException.printStackTrace();
+			}
+		}
+	}
+
+	void sendMessage(String msg) {
+		try {
+			out.writeObject(msg);
+			out.flush();
+//			System.out.println("server>" + msg);
+		} catch (IOException ioException) {
+			ioException.printStackTrace();
+		}
+	}
+
+	public static void main(String args[]) {
+		InfoModule infoModule = new InfoModule();
+		infoModule.run();
+	}
+}

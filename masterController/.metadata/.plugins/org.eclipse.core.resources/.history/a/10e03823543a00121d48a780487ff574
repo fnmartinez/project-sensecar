@@ -1,0 +1,19 @@
+package info_module;
+
+import java.io.IOException;
+import java.net.Socket;
+
+public class InfoModule {
+
+	protected Socket socket;
+	
+	public boolean isConnected() {
+		return socket != null && socket.isConnected();
+	}
+
+	public void disconnect() throws IOException {
+		if (!isConnected())
+			throw new IllegalStateException("Not connected to a host");
+		socket.close();
+	}
+}
