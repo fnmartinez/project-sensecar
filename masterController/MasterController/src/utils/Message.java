@@ -6,14 +6,19 @@ public class Message {
 	// Si esta en true es porque esta ocupada
 	private Boolean[] places;
 	
+	public Message(String ip, Boolean[] places) {
+		this.ip = ip;
+		this.places = places;
+	}
+	
 	public String getPlacesString() {
 		StringBuilder str = new StringBuilder();
 		for(int i = 0; i < places.length; i++) {
 			str.append("Place " + i + ": ");
 			if(places[i]) {
-				str.append("is occupied");
+				str.append("occupied");
 			} else {
-				str.append("is not occupied");
+				str.append("free");
 			}
 			str.append("\t");
 		}

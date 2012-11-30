@@ -41,10 +41,10 @@ public class MainModule {
 	
 	private String buildMessage(Message message) {
 		StringBuilder builder = new StringBuilder();
-		builder.append("--------------------------------------------------------------------------------");
-		builder.append("Node " + message.getIp() + ": \n");
+		builder.append("--------------------------------------------------------------------------------\n");
+		builder.append("Node: " + message.getIp() + "\n");
 		builder.append(message.getPlacesString());
-		builder.append("--------------------------------------------------------------------------------");
+		builder.append("--------------------------------------------------------------------------------\n");
 		return builder.toString();
 	}
 	
@@ -75,8 +75,8 @@ public class MainModule {
 //		}
 //		
 //	}
-	public static void main(String[] args) {
-		InfoModule info = new InfoModule();
-		info.addMessage("hola");
-	}
+//	public static void main(String[] args) {
+//		InfoModule info = new InfoModule();
+//		info.addMessage("hola");
+//	}
 }
