@@ -1,7 +1,0 @@
-package utils;
-
-public class Message {
-
-	private String ip;
-	private Boolean[]
-}

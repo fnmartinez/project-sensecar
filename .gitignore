@@ -24,3 +24,6 @@
 *.project*
 .settings/
 .settings
+
+.metadata/
+.metadata
