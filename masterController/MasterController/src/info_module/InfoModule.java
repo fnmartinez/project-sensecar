@@ -18,7 +18,7 @@ public class InfoModule {
 	private Socket connection = null;
 	private ObjectOutputStream out;
 	private ObjectInputStream in;
-	private int infoPort = 2000;
+	private int infoPort = 8088;
 	
 	private BlockingQueue<String> messages;
 	private ExecutorService executor = Executors.newFixedThreadPool(1);

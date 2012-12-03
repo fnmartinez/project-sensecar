@@ -8,6 +8,8 @@ import java.net.Socket;
 
 public class server implements Runnable {
 
+	//TODO borrar esta clase cuando termine todo
+	
 	ServerSocket providerSocket;
 	Socket connection = null;
 	ObjectOutputStream out;

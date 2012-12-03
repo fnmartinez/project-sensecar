@@ -8,6 +8,8 @@ import java.net.UnknownHostException;
 
 public class client implements Runnable {
 
+	//TODO borrar esta clase cuando termine todo
+	
 	Socket socket;
 	ObjectOutputStream out;
 	ObjectInputStream in;
