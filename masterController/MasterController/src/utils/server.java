@@ -1,10 +1,18 @@
 package utils;
 
+import info_module.InfoModule;
+
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+
+import ctrl_module.CtrlModule;
+
+import main_module.MainModule;
+
+import sense_module.SenseModule;
 
 public class server implements Runnable {
 
@@ -67,6 +75,10 @@ public class server implements Runnable {
 	}
 
 	public static void main(String args[]) {
+//		new SenseModule();
+//		new MainModule();
+//		new InfoModule();
+//		new CtrlModule();
 		server server = new server();
 		while (true) {
 			server.run();

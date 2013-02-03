@@ -2,12 +2,14 @@ package utils;
 
 public class Message {
 
-	private String ip;
+	private String from;
+	private String to;
 	// Si esta en true es porque esta ocupada
 	private Boolean[] places;
 	
-	public Message(String ip, Boolean[] places) {
-		this.ip = ip;
+	public Message(String from, String to, Boolean[] places) {
+		this.from = from;
+		this.to = to;
 		this.places = places;
 	}
 	
@@ -26,7 +28,15 @@ public class Message {
 		return str.toString();
 	}
 	
-	public String getIp() {
-		return ip;
+	public String getFrom() {
+		return this.from;
+	}
+	
+	public String getTo() {
+		return this.to;
+	}
+	
+	public Boolean[] getPlaces() {
+		return this.places;
 	}
 }

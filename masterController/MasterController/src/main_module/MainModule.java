@@ -42,7 +42,7 @@ public class MainModule {
 	private String buildMessage(Message message) {
 		StringBuilder builder = new StringBuilder();
 		builder.append("--------------------------------------------------------------------------------\n");
-		builder.append("Node: " + message.getIp() + "\n");
+		builder.append("From: " + message.getFrom() + " To: " + message.getTo() + "\n");
 		builder.append(message.getPlacesString());
 		builder.append("--------------------------------------------------------------------------------\n");
 		return builder.toString();
