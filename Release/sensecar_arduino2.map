@@ -1,0 +1,2039 @@
+Archive member included because of file (symbol)
+
+/home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+                              ./src/main.o (_ZN13EthernetClass5beginEPh9IPAddress)
+/home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+                              ./src/main.o (_ZTV14EthernetClient)
+/home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+                              ./src/main.o (_ZN14EthernetServer5beginEv)
+/home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                              ./src/main.o (_ZN11EthernetUDP5writeEPKhj)
+/home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+                              ./src/main.o (Serial)
+/home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+                              ./src/main.o (_ZTV9IPAddress)
+/home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o) (_ZN5Print5writeEPKhj)
+/home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o) (_ZNK6StringixEj)
+/home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(new.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o) (_Znwj)
+/home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o) (millis)
+/home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring_digital.o)
+                              ./src/main.o (pinMode)
+/home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o) (_Z5closeh)
+/home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o) (_ZN10W5100Class5writeEjh)
+/home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o) (_ZN9DhcpClass10getLocalIpEv)
+/home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o) (_ZN9DNSClient5beginERK9IPAddress)
+/home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(SPI.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o) (_ZN8SPIClass5beginEv)
+/home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WMath.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o) (_Z6randomll)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_mulsi3.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WMath.o) (__mulsi3)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_udivmodsi4.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o) (__udivmodsi4)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_divmodsi4.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o) (__divmodsi4)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o (exit)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_copy_data.o)
+                              ./src/main.o (__do_copy_data)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_clear_bss.o)
+                              ./src/main.o (__do_clear_bss)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_ctors.o)
+                              ./src/main.o (__do_global_ctors)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_fixunssfsi.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o) (__fixunssfsi)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_addsub_sf.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o) (__addsf3)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_mul_sf.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o) (__mulsf3)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_div_sf.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o) (__divsf3)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_gt_sf.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o) (__gtsf2)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_ge_sf.o)
+                              /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_fixunssfsi.o) (__gesf2)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_lt_sf.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o) (__ltsf2)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_le_sf.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o) (__lesf2)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_unord_sf.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o) (__unordsf2)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_si_to_sf.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o) (__floatsisf)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_sf_to_si.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o) (__fixsfsi)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_thenan_sf.o)
+                              /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_addsub_sf.o) (__thenan_sf)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_usi_to_sf.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o) (__floatunsisf)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_prologue.o)
+                              /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_addsub_sf.o) (__prologue_saves__)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_epilogue.o)
+                              /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_addsub_sf.o) (__epilogue_restores__)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_tablejump_elpm.o)
+                              /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_ctors.o) (__tablejump_elpm__)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_clzsi2.o)
+                              /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_si_to_sf.o) (__clzsi2)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_pack_sf.o)
+                              /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_addsub_sf.o) (__pack_f)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_unpack_sf.o)
+                              /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_addsub_sf.o) (__unpack_f)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_fpcmp_parts_sf.o)
+                              /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_gt_sf.o) (__fpcmp_parts_f)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_clz.o)
+                              /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_clzsi2.o) (__clz_tab)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(malloc.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(new.o) (malloc)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(random.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WMath.o) (random)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(realloc.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o) (realloc)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(atol.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o) (atol)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(isspace.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o) (isspace)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(tolower.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o) (tolower)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(toupper.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o) (toupper)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memcmp.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o) (memcmp)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memcpy.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o) (memcpy)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memmove.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o) (memmove)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strchr.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o) (strchr)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strcmp.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o) (strcmp)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strcpy.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o) (strcpy)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strncmp.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o) (strncmp)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strncpy.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o) (strncpy)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strrchr.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o) (strrchr)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strstr.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o) (strstr)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(itoa.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o) (itoa)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(ltoa.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o) (ltoa)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(mulsi10.o)
+                              /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(atol.o) (__mulsi_const_10)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(ultoa.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o) (ultoa)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(utoa.o)
+                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o) (utoa)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(cty_isfalse.o)
+                              /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(isspace.o) (__ctype_isfalse)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strrev.o)
+                              /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(itoa.o) (strrev)
+/usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_udivmodhi4.o)
+                              /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(itoa.o) (__udivmodhi4)
+
+Allocating common symbols
+Common symbol       size              file
+
+__brkval            0x2               /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(malloc.o)
+__flp               0x2               /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(malloc.o)
+
+Discarded input sections
+
+ .stab          0x0000000000000000      0x6e4 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+ .stabstr       0x0000000000000000       0x64 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+ .stab          0x0000000000000000      0x75c /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(malloc.o)
+ .stabstr       0x0000000000000000      0x834 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(malloc.o)
+ .stab          0x0000000000000000      0x330 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(random.o)
+ .stabstr       0x0000000000000000      0x44b /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(random.o)
+ .stab          0x0000000000000000      0x5c4 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(realloc.o)
+ .stabstr       0x0000000000000000      0x7b7 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(realloc.o)
+ .stab          0x0000000000000000      0x1ec /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(atol.o)
+ .stabstr       0x0000000000000000       0x3d /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(atol.o)
+ .stab          0x0000000000000000       0xa8 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(isspace.o)
+ .stabstr       0x0000000000000000       0x53 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(isspace.o)
+ .stab          0x0000000000000000       0xa8 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(tolower.o)
+ .stabstr       0x0000000000000000       0x53 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(tolower.o)
+ .stab          0x0000000000000000       0xa8 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(toupper.o)
+ .stabstr       0x0000000000000000       0x53 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(toupper.o)
+ .stab          0x0000000000000000       0xc0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memcmp.o)
+ .stabstr       0x0000000000000000       0x3f /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memcmp.o)
+ .stab          0x0000000000000000       0x90 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memcpy.o)
+ .stabstr       0x0000000000000000       0x3f /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memcpy.o)
+ .stab          0x0000000000000000       0xf0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memmove.o)
+ .stabstr       0x0000000000000000       0x40 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memmove.o)
+ .stab          0x0000000000000000       0xa8 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strchr.o)
+ .stabstr       0x0000000000000000       0x3f /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strchr.o)
+ .stab          0x0000000000000000       0x90 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strcmp.o)
+ .stabstr       0x0000000000000000       0x3f /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strcmp.o)
+ .stab          0x0000000000000000       0x78 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strcpy.o)
+ .stabstr       0x0000000000000000       0x3f /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strcpy.o)
+ .stab          0x0000000000000000       0xcc /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strncmp.o)
+ .stabstr       0x0000000000000000       0x40 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strncmp.o)
+ .stab          0x0000000000000000       0xd8 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strncpy.o)
+ .stabstr       0x0000000000000000       0x40 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strncpy.o)
+ .stab          0x0000000000000000       0xa8 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strrchr.o)
+ .stabstr       0x0000000000000000       0x40 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strrchr.o)
+ .stab          0x0000000000000000      0x15c /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strstr.o)
+ .stabstr       0x0000000000000000       0x3f /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strstr.o)
+ .stab          0x0000000000000000      0x1bc /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(itoa.o)
+ .stabstr       0x0000000000000000       0x4d /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(itoa.o)
+ .stab          0x0000000000000000      0x2a0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(ltoa.o)
+ .stabstr       0x0000000000000000       0x4d /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(ltoa.o)
+ .stab          0x0000000000000000      0x120 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(mulsi10.o)
+ .stabstr       0x0000000000000000       0x3e /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(mulsi10.o)
+ .stab          0x0000000000000000      0x1ec /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(ultoa.o)
+ .stabstr       0x0000000000000000       0x4f /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(ultoa.o)
+ .stab          0x0000000000000000      0x138 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(utoa.o)
+ .stabstr       0x0000000000000000       0x4d /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(utoa.o)
+ .stab          0x0000000000000000       0x6c /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(cty_isfalse.o)
+ .stabstr       0x0000000000000000       0x5b /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(cty_isfalse.o)
+ .stab          0x0000000000000000       0xe4 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strrev.o)
+ .stabstr       0x0000000000000000       0x3f /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strrev.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000100000 xr
+data             0x0000000000800200 0x000000000000fe00 rw !x
+eeprom           0x0000000000810000 0x0000000000010000 rw !x
+fuse             0x0000000000820000 0x0000000000000400 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800200
+LOAD /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+LOAD ./src/main.o
+LOAD /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a
+LOAD /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a
+LOAD /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libm.a
+LOAD /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a
+LOAD /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a
+LOAD /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000     0x784e
+ *(.vectors)
+ .vectors       0x0000000000000000       0xe4 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+                0x0000000000000000                __vectors
+                0x0000000000000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+ .progmem.data  0x00000000000000e4      0x120 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring_digital.o)
+                0x00000000000000e4                port_to_mode_PGM
+                0x00000000000000fe                port_to_output_PGM
+                0x0000000000000118                port_to_input_PGM
+                0x0000000000000132                digital_pin_to_port_PGM
+                0x0000000000000178                digital_pin_to_bit_mask_PGM
+                0x00000000000001be                digital_pin_to_timer_PGM
+                0x0000000000000204                . = ALIGN (0x2)
+                0x0000000000000204                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000000000000204        0x0 linker stubs
+ *(.trampolines*)
+                0x0000000000000204                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000000000000204                __ctors_start = .
+ *(.ctors)
+ .ctors         0x0000000000000204        0x2 ./src/main.o
+ .ctors         0x0000000000000206        0x2 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+ .ctors         0x0000000000000208        0x2 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+ .ctors         0x000000000000020a        0x2 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+ .ctors         0x000000000000020c        0x2 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+ .ctors         0x000000000000020e        0x2 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+ .ctors         0x0000000000000210        0x2 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+ .ctors         0x0000000000000212        0x2 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+ .ctors         0x0000000000000214        0x2 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+                0x0000000000000216                __ctors_end = .
+                0x0000000000000216                __dtors_start = .
+ *(.dtors)
+                0x0000000000000216                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000000000000216        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+                0x0000000000000216                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000000000000216       0x10 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000000000000226       0x1a /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_copy_data.o)
+                0x0000000000000226                __do_copy_data
+ .init4         0x0000000000000240       0x10 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_clear_bss.o)
+                0x0000000000000240                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ .init6         0x0000000000000250       0x20 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_ctors.o)
+                0x0000000000000250                __do_global_ctors
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000000000000270        0x8 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+ *(.init9)
+ *(.text)
+ .text          0x0000000000000278        0x4 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+                0x0000000000000278                __vector_38
+                0x0000000000000278                __vector_22
+                0x0000000000000278                __vector_28
+                0x0000000000000278                __vector_1
+                0x0000000000000278                __vector_32
+                0x0000000000000278                __vector_34
+                0x0000000000000278                __vector_24
+                0x0000000000000278                __vector_12
+                0x0000000000000278                __vector_46
+                0x0000000000000278                __bad_interrupt
+                0x0000000000000278                __vector_6
+                0x0000000000000278                __vector_31
+                0x0000000000000278                __vector_35
+                0x0000000000000278                __vector_39
+                0x0000000000000278                __vector_3
+                0x0000000000000278                __vector_30
+                0x0000000000000278                __vector_45
+                0x0000000000000278                __vector_11
+                0x0000000000000278                __vector_13
+                0x0000000000000278                __vector_17
+                0x0000000000000278                __vector_19
+                0x0000000000000278                __vector_56
+                0x0000000000000278                __vector_7
+                0x0000000000000278                __vector_49
+                0x0000000000000278                __vector_41
+                0x0000000000000278                __vector_43
+                0x0000000000000278                __vector_27
+                0x0000000000000278                __vector_5
+                0x0000000000000278                __vector_33
+                0x0000000000000278                __vector_47
+                0x0000000000000278                __vector_4
+                0x0000000000000278                __vector_44
+                0x0000000000000278                __vector_9
+                0x0000000000000278                __vector_2
+                0x0000000000000278                __vector_21
+                0x0000000000000278                __vector_15
+                0x0000000000000278                __vector_29
+                0x0000000000000278                __vector_40
+                0x0000000000000278                __vector_8
+                0x0000000000000278                __vector_48
+                0x0000000000000278                __vector_14
+                0x0000000000000278                __vector_53
+                0x0000000000000278                __vector_10
+                0x0000000000000278                __vector_50
+                0x0000000000000278                __vector_16
+                0x0000000000000278                __vector_18
+                0x0000000000000278                __vector_20
+                0x0000000000000278                __vector_42
+ .text          0x000000000000027c      0x26a ./src/main.o
+                0x000000000000027c                _Z20check_incomming_commv
+                0x000000000000030c                _Z13check_sensorsv
+                0x000000000000034e                _Z8set_pinsv
+                0x000000000000035a                _Z11inform_datav
+                0x00000000000003d8                setup
+                0x0000000000000468                loop
+                0x000000000000048e                main
+ .text          0x00000000000004e6      0x592 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+                0x00000000000004e6                _ZN10W5100Class8writeGAREPh
+                0x00000000000004f6                _ZN10W5100Class7readGAREPh
+                0x0000000000000506                _ZN10W5100Class9writeSUBREPh
+                0x0000000000000516                _ZN10W5100Class8readSUBREPh
+                0x0000000000000526                _ZN10W5100Class9writeSHAREPh
+                0x0000000000000536                _ZN10W5100Class9writeSIPREPh
+                0x000000000000054c                _ZN10W5100Class8readSIPREPh
+                0x000000000000055c                _ZN13EthernetClass5beginEPh
+                0x0000000000000674                _ZN13EthernetClass5beginEPh9IPAddressS1_S1_S1_
+                0x00000000000006e6                _ZN13EthernetClass5beginEPh9IPAddressS1_S1_
+                0x00000000000007d4                _ZN13EthernetClass5beginEPh9IPAddressS1_
+                0x0000000000000874                _ZN13EthernetClass5beginEPh9IPAddress
+                0x00000000000008dc                _ZN13EthernetClass8maintainEv
+                0x000000000000099c                _ZN13EthernetClass7localIPEv
+                0x00000000000009d0                _ZN13EthernetClass10subnetMaskEv
+                0x0000000000000a04                _ZN13EthernetClass9gatewayIPEv
+                0x0000000000000a38                _ZN13EthernetClass11dnsServerIPEv
+ .text          0x0000000000000a78      0x47c /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+                0x0000000000000a78                _ZN14EthernetClient5writeEh
+                0x0000000000000aa4                _ZN14EthernetClient5flushEv
+                0x0000000000000ad2                _ZN14EthernetClientcvbEv
+                0x0000000000000ae2                _ZN14EthernetClient4peekEv
+                0x0000000000000b2a                _ZN14EthernetClient4readEPhj
+                0x0000000000000b34                _ZN14EthernetClient4readEv
+                0x0000000000000b6a                _ZN14EthernetClient9availableEv
+                0x0000000000000b88                _ZN14EthernetClient5writeEPKhj
+                0x0000000000000bcc                _ZN10W5100Class6readSnEhj
+                0x0000000000000bde                _ZN10W5100Class8readSnSREh
+                0x0000000000000be8                _ZN14EthernetClientC1Ev
+                0x0000000000000be8                _ZN14EthernetClientC2Ev
+                0x0000000000000c0c                _ZN14EthernetClientC2Eh
+                0x0000000000000c0c                _ZN14EthernetClientC1Eh
+                0x0000000000000c2e                _ZN9DNSClientC1Ev
+                0x0000000000000c46                _ZN14EthernetClient7connectEPKcj
+                0x0000000000000d1e                _ZN14EthernetClient6statusEv
+                0x0000000000000d30                _ZN14EthernetClient9connectedEv
+                0x0000000000000d78                _ZN14EthernetClient4stopEv
+                0x0000000000000e02                _ZN14EthernetClient7connectE9IPAddressj
+ .text          0x0000000000000ef4      0x370 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+                0x0000000000000ef4                _ZN14EthernetServer5writeEh
+                0x0000000000000f20                _ZN14EthernetServer5beginEv
+                0x0000000000000fbc                _ZN14EthernetServerC2Ej
+                0x0000000000000fbc                _ZN14EthernetServerC1Ej
+                0x0000000000000fd0                _ZN14EthernetServer6acceptEv
+                0x00000000000010a2                _ZN14EthernetServer5writeEPKhj
+                0x0000000000001162                _ZN14EthernetServer9availableEv
+ .text          0x0000000000001264      0x450 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                0x0000000000001264                _ZN11EthernetUDP4readEPcj
+                0x0000000000001274                _ZN11EthernetUDP8remoteIPEv
+                0x0000000000001296                _ZN11EthernetUDP10remotePortEv
+                0x000000000000129e                _ZN11EthernetUDP9availableEv
+                0x00000000000012a6                _ZN11EthernetUDP5writeEh
+                0x00000000000012d2                _ZN11EthernetUDP5flushEv
+                0x00000000000012f6                _ZN11EthernetUDP4peekEv
+                0x000000000000132a                _ZN11EthernetUDP4readEPhj
+                0x000000000000136e                _ZN11EthernetUDP4readEv
+                0x00000000000013c2                _ZN11EthernetUDP11parsePacketEv
+                0x0000000000001468                _ZN11EthernetUDP5writeEPKhj
+                0x0000000000001494                _ZN11EthernetUDP9endPacketEv
+                0x000000000000149e                _ZN11EthernetUDP11beginPacketE9IPAddressj
+                0x00000000000014b0                _ZN11EthernetUDP4stopEv
+                0x00000000000014f6                _ZN11EthernetUDP5beginEj
+                0x0000000000001562                _ZN11EthernetUDPC2Ev
+                0x0000000000001562                _ZN11EthernetUDPC1Ev
+                0x00000000000015c6                _ZN11EthernetUDP11beginPacketEPKcj
+ .text          0x00000000000016b4      0xa4a /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+                0x00000000000016b4                _ZN14HardwareSerial9availableEv
+                0x00000000000016da                _ZN14HardwareSerial4peekEv
+                0x0000000000001712                _ZN14HardwareSerial4readEv
+                0x0000000000001756                _ZN14HardwareSerial5flushEv
+                0x000000000000176c                _ZN14HardwareSerial5writeEh
+                0x00000000000017e4                _Z10store_charhP11ring_buffer
+                0x0000000000001818                _Z11serialEventv
+                0x000000000000181a                __vector_25
+                0x0000000000001880                _Z12serialEvent1v
+                0x0000000000001882                __vector_36
+                0x00000000000018e8                _Z12serialEvent2v
+                0x00000000000018ea                __vector_51
+                0x0000000000001950                _Z12serialEvent3v
+                0x0000000000001952                __vector_54
+                0x00000000000019b8                _Z14serialEventRunv
+                0x00000000000019fa                __vector_26
+                0x0000000000001a78                __vector_37
+                0x0000000000001af6                __vector_52
+                0x0000000000001b74                __vector_55
+                0x0000000000001bf2                _ZN14HardwareSerialC1EP11ring_bufferS1_PVhS3_S3_S3_S3_S3_hhhhh
+                0x0000000000001bf2                _ZN14HardwareSerialC2EP11ring_bufferS1_PVhS3_S3_S3_S3_S3_hhhhh
+                0x0000000000001c7a                _ZN14HardwareSerial5beginEm
+                0x0000000000001d78                _ZN14HardwareSerial5beginEmh
+                0x0000000000001e80                _ZN14HardwareSerial3endEv
+                0x0000000000001f2e                _ZN14HardwareSerialcvbEv
+ .text          0x00000000000020fe      0x150 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+                0x00000000000020fe                _ZNK9IPAddress7printToER5Print
+                0x0000000000002184                _ZN9IPAddressC2Ev
+                0x0000000000002184                _ZN9IPAddressC1Ev
+                0x0000000000002198                _ZN9IPAddressC1Ehhhh
+                0x0000000000002198                _ZN9IPAddressC2Ehhhh
+                0x00000000000021b0                _ZN9IPAddressC2Em
+                0x00000000000021b0                _ZN9IPAddressC1Em
+                0x00000000000021c4                _ZN9IPAddressC1EPKh
+                0x00000000000021c4                _ZN9IPAddressC2EPKh
+                0x00000000000021e4                _ZN9IPAddressaSEPKh
+                0x0000000000002204                _ZN9IPAddressaSEm
+                0x0000000000002210                _ZN9IPAddresseqEPKh
+ .text          0x000000000000224e      0x6c4 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+                0x000000000000224e                _ZN5Print5writeEPKhj
+                0x00000000000022a2                _ZN5Print5writeEPKc
+                0x00000000000022d4                _ZN5Print5printEPK19__FlashStringHelper
+                0x000000000000231a                _ZN5Print5printERK6String
+                0x0000000000002380                _ZN5Print5printEPKc
+                0x0000000000002386                _ZN5Print5printEc
+                0x0000000000002396                _ZN5Print5printERK9Printable
+                0x00000000000023ac                _ZN5Print7printlnEv
+                0x00000000000023d6                _ZN5Print7printlnEPK19__FlashStringHelper
+                0x00000000000023fc                _ZN5Print7printlnERK6String
+                0x0000000000002422                _ZN5Print7printlnEPKc
+                0x0000000000002448                _ZN5Print7printlnEc
+                0x000000000000246e                _ZN5Print7printlnERK9Printable
+                0x0000000000002494                _ZN5Print11printNumberEmh
+                0x0000000000002548                _ZN5Print5printEmi
+                0x0000000000002566                _ZN5Print7printlnEmi
+                0x000000000000258c                _ZN5Print5printEji
+                0x000000000000259a                _ZN5Print7printlnEji
+                0x00000000000025c8                _ZN5Print5printEhi
+                0x00000000000025d8                _ZN5Print7printlnEhi
+                0x0000000000002608                _ZN5Print5printEli
+                0x000000000000267e                _ZN5Print7printlnEli
+                0x00000000000026a4                _ZN5Print5printEii
+                0x00000000000026b8                _ZN5Print7printlnEii
+                0x00000000000026ee                _ZN5Print10printFloatEdh
+                0x00000000000028e6                _ZN5Print5printEdi
+                0x00000000000028ec                _ZN5Print7printlnEdi
+ .text          0x0000000000002912     0x1006 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+                0x0000000000002912                _ZN6StringD1Ev
+                0x0000000000002912                _ZN6StringD2Ev
+                0x000000000000291e                _ZN6String10invalidateEv
+                0x0000000000002942                _ZN6String12changeBufferEj
+                0x0000000000002976                _ZN6String7reserveEj
+                0x00000000000029b4                _ZN6String4copyEPKcj
+                0x00000000000029f6                _ZN6StringC1EPKc
+                0x00000000000029f6                _ZN6StringC2EPKc
+                0x0000000000002a2c                _ZN6StringaSERKS_
+                0x0000000000002a62                _ZN6StringC1ERKS_
+                0x0000000000002a62                _ZN6StringC2ERKS_
+                0x0000000000002a78                _ZN6StringaSEPKc
+                0x0000000000002aa8                _ZN6StringC2Emh
+                0x0000000000002aa8                _ZN6StringC1Emh
+                0x0000000000002b0a                _ZN6StringC1Elh
+                0x0000000000002b0a                _ZN6StringC2Elh
+                0x0000000000002b6c                _ZN6StringC2Ejh
+                0x0000000000002b6c                _ZN6StringC1Ejh
+                0x0000000000002bcc                _ZN6StringC1Eih
+                0x0000000000002bcc                _ZN6StringC2Eih
+                0x0000000000002c2c                _ZN6StringC1Ehh
+                0x0000000000002c2c                _ZN6StringC2Ehh
+                0x0000000000002c8e                _ZN6StringC2Ec
+                0x0000000000002c8e                _ZN6StringC1Ec
+                0x0000000000002cc2                _ZN6String6concatEPKcj
+                0x0000000000002d1a                _ZN6String6concatERKS_
+                0x0000000000002d2a                _ZN6String6concatEPKc
+                0x0000000000002d4c                _ZN6String6concatEc
+                0x0000000000002d74                _ZN6String6concatEh
+                0x0000000000002dce                _ZN6String6concatEi
+                0x0000000000002e32                _ZN6String6concatEj
+                0x0000000000002e8e                _ZN6String6concatEl
+                0x0000000000002ef4                _ZN6String6concatEm
+                0x0000000000002f5a                _ZplRK15StringSumHelperRK6String
+                0x0000000000002f80                _ZplRK15StringSumHelperPKc
+                0x0000000000002fb4                _ZplRK15StringSumHelperc
+                0x0000000000002fd0                _ZplRK15StringSumHelperh
+                0x0000000000002fec                _ZplRK15StringSumHelperi
+                0x0000000000003008                _ZplRK15StringSumHelperj
+                0x0000000000003024                _ZplRK15StringSumHelperl
+                0x0000000000003040                _ZplRK15StringSumHelperm
+                0x000000000000305c                _ZNK6String9compareToERKS_
+                0x00000000000030c8                _ZNK6String6equalsERKS_
+                0x00000000000030ea                _ZNK6String6equalsEPKc
+                0x0000000000003130                _ZNK6StringltERKS_
+                0x000000000000313e                _ZNK6StringgtERKS_
+                0x0000000000003150                _ZNK6StringleERKS_
+                0x0000000000003162                _ZNK6StringgeERKS_
+                0x0000000000003172                _ZNK6String16equalsIgnoreCaseERKS_
+                0x00000000000031de                _ZNK6String10startsWithERKS_j
+                0x000000000000322a                _ZNK6String10startsWithERKS_
+                0x000000000000324a                _ZNK6String8endsWithERKS_
+                0x0000000000003294                _ZN6String9setCharAtEjc
+                0x00000000000032ae                _ZN6StringixEj
+                0x00000000000032d4                _ZNK6StringixEj
+                0x00000000000032fa                _ZNK6String6charAtEj
+                0x0000000000003300                _ZNK6String8getBytesEPhjj
+                0x0000000000003358                _ZNK6String7indexOfEcj
+                0x0000000000003390                _ZNK6String7indexOfEc
+                0x000000000000339a                _ZNK6String7indexOfERKS_j
+                0x00000000000033d6                _ZNK6String7indexOfERKS_
+                0x00000000000033e0                _ZNK6String11lastIndexOfEcj
+                0x000000000000344a                _ZNK6String11lastIndexOfEc
+                0x000000000000345a                _ZNK6String11lastIndexOfERKS_j
+                0x00000000000034f4                _ZNK6String11lastIndexOfERKS_
+                0x000000000000350a                _ZNK6String9substringEjj
+                0x00000000000035ac                _ZNK6String9substringEj
+                0x00000000000035c4                _ZN6String7replaceEcc
+                0x00000000000035e2                _ZN6String7replaceERKS_S1_
+                0x00000000000037f6                _ZN6String11toLowerCaseEv
+                0x000000000000381a                _ZN6String11toUpperCaseEv
+                0x000000000000383e                _ZN6String4trimEv
+                0x00000000000038f8                _ZNK6String5toIntEv
+ .text          0x0000000000003918       0x2c /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(new.o)
+                0x0000000000003918                _Znwj
+                0x000000000000391e                _ZdlPv
+                0x0000000000003924                __cxa_guard_acquire
+                0x0000000000003938                __cxa_guard_release
+                0x0000000000003940                __cxa_guard_abort
+                0x0000000000003942                __cxa_pure_virtual
+ .text          0x0000000000003944      0x21e /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring.o)
+                0x0000000000003944                __vector_23
+                0x00000000000039d4                millis
+                0x00000000000039f0                micros
+                0x0000000000003a3c                delay
+                0x0000000000003a8a                delayMicroseconds
+                0x0000000000003a9e                init
+ .text          0x0000000000003b62      0x236 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring_digital.o)
+                0x0000000000003c4a                pinMode
+                0x0000000000003cd4                digitalWrite
+                0x0000000000003d44                digitalRead
+ .text          0x0000000000003d98      0x75a /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+                0x0000000000003daa                _ZN10W5100Class8readSnIREh
+                0x0000000000003dbe                _ZN10W5100Class11readSnRX_RDEh
+                0x0000000000003dec                _ZN10W5100Class8readSnMREh
+                0x0000000000003df6                _ZN10W5100Class7writeSnEhjh
+                0x0000000000003e0a                _ZN10W5100Class9writeSnIREhh
+                0x0000000000003e16                _ZN10W5100Class12writeSnDPORTEhj
+                0x0000000000003e3a                _ZN10W5100Class12writeSnRX_RDEhj
+                0x0000000000003e5e                _ZN10W5100Class9writeSnMREhh
+                0x0000000000003e6a                _ZN10W5100Class11writeSnPORTEhj
+                0x0000000000003e8e                _ZN10W5100Class7writeSnEhjPhj
+                0x0000000000003ea6                _ZN10W5100Class11writeSnDIPREhPh
+                0x0000000000003eb6                _Z5closeh
+                0x0000000000003ed2                _Z6sockethhjh
+                0x0000000000003f50                _Z6listenh
+                0x0000000000003f80                _Z7connecthPhj
+                0x0000000000003fea                _Z10disconnecth
+                0x0000000000003ff8                _Z4sendhPKhj
+                0x000000000000409c                _Z4recvhPhi
+                0x000000000000412a                _Z4peekhPh
+                0x0000000000004148                _Z6sendtohPKhjPhj
+                0x000000000000420a                _Z8recvfromhPhjS_Pj
+                0x0000000000004376                _Z8igmpsendhPKhj
+                0x00000000000043f4                _Z10bufferDatahjPKhj
+                0x0000000000004460                _Z8startUDPhPhj
+                0x00000000000044ac                _Z7sendUDPh
+ .text          0x00000000000044f2      0x560 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+                0x00000000000044f2                _ZN8SPIClass8transferEh
+                0x00000000000044fe                _ZN10W5100Class6initSSEv
+                0x0000000000004502                _ZN10W5100Class5setSSEv
+                0x0000000000004506                _ZN10W5100Class7resetSSEv
+                0x000000000000450a                _ZN10W5100Class5writeEjh
+                0x0000000000004564                _ZN10W5100Class9writeSnCREhh
+                0x0000000000004594                _ZN10W5100Class12writeSnTX_WREhj
+                0x00000000000045b8                _ZN10W5100Class7writeMREh
+                0x00000000000045c4                _ZN10W5100Class9writeTMSREh
+                0x00000000000045d0                _ZN10W5100Class9writeRMSREh
+                0x00000000000045dc                _ZN10W5100Class4initEv
+                0x000000000000464e                _ZN10W5100Class5writeEjPKhj
+                0x00000000000046b4                _ZN10W5100Class4readEj
+                0x0000000000004706                _ZN10W5100Class8readSnCREh
+                0x000000000000473e                _ZN10W5100Class11readSnTX_WREh
+                0x000000000000476c                _ZN10W5100Class27send_data_processing_offsetEhjPKhj
+                0x000000000000480c                _ZN10W5100Class20send_data_processingEhPKhj
+                0x0000000000004824                _ZN10W5100Class12readSnRX_RSREh
+                0x0000000000004852                _ZN10W5100Class17getRXReceivedSizeEh
+                0x000000000000488e                _ZN10W5100Class12readSnTX_FSREh
+                0x00000000000048bc                _ZN10W5100Class13getTXFreeSizeEh
+                0x00000000000048f8                _ZN10W5100Class4readEjPhj
+                0x0000000000004960                _ZN10W5100Class9read_dataEhPVhS1_j
+                0x00000000000049d6                _ZN10W5100Class20recv_data_processingEhPhjh
+                0x0000000000004a38                _ZN10W5100Class9execCmdSnEh7SockCMD
+ .text          0x0000000000004a52      0xdbe /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+                0x0000000000004a74                _ZN9DhcpClass16reset_DHCP_leaseEv
+                0x0000000000004a84                _ZN9DhcpClass12presend_DHCPEv
+                0x0000000000004a86                _ZN9DhcpClass17parseDHCPResponseEmRm
+                0x0000000000004f54                _ZN9DhcpClass10getLocalIpEv
+                0x0000000000004f6a                _ZN9DhcpClass13getSubnetMaskEv
+                0x0000000000004f80                _ZN9DhcpClass12getGatewayIpEv
+                0x0000000000004f96                _ZN9DhcpClass15getDhcpServerIpEv
+                0x0000000000004fac                _ZN9DhcpClass14getDnsServerIpEv
+                0x0000000000004fc2                _ZN9DhcpClass9printByteEPch
+                0x0000000000004fe8                _ZN9DhcpClass17send_DHCP_MESSAGEEhj
+                0x0000000000005292                _ZN9DhcpClass18request_DHCP_leaseEv
+                0x000000000000559e                _ZN9DhcpClass10checkLeaseEv
+                0x000000000000574a                _ZN9DhcpClass13beginWithDHCPEPhmm
+ .text          0x0000000000005810      0x67e /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+                0x0000000000005832                _ZN9DNSClient5beginERK9IPAddress
+                0x0000000000005850                _ZN9DNSClient9inet_atonEPKcR9IPAddress
+                0x00000000000058d8                _ZN9DNSClient12BuildRequestEPKc
+                0x0000000000005a30                _ZN9DNSClient15ProcessResponseEjR9IPAddress
+                0x0000000000005d3c                _ZN9DNSClient13getHostByNameEPKcR9IPAddress
+ .text          0x0000000000005e8e       0x74 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(SPI.o)
+                0x0000000000005e8e                _ZN8SPIClass5beginEv
+                0x0000000000005ebc                _ZN8SPIClass3endEv
+                0x0000000000005ec4                _ZN8SPIClass11setBitOrderEh
+                0x0000000000005ed6                _ZN8SPIClass11setDataModeEh
+                0x0000000000005ee0                _ZN8SPIClass15setClockDividerEh
+ .text          0x0000000000005f02      0x12a /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WMath.o)
+                0x0000000000005f02                _Z10randomSeedj
+                0x0000000000005f12                _Z6randoml
+                0x0000000000005f4e                _Z6randomll
+                0x0000000000005f8a                _Z3maplllll
+                0x000000000000601c                _Z8makeWordj
+                0x000000000000601e                _Z8makeWordhh
+ .text          0x000000000000602c        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_mulsi3.o)
+ .text          0x000000000000602c        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_udivmodsi4.o)
+ .text          0x000000000000602c        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_divmodsi4.o)
+ .text          0x000000000000602c        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_exit.o)
+ .text          0x000000000000602c        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_copy_data.o)
+ .text          0x000000000000602c        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_clear_bss.o)
+ .text          0x000000000000602c        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_ctors.o)
+ .text          0x000000000000602c       0x58 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_fixunssfsi.o)
+                0x000000000000602c                __fixunssfsi
+ .text          0x0000000000006084      0x350 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_addsub_sf.o)
+                0x0000000000006318                __addsf3
+                0x0000000000006372                __subsf3
+ .text          0x00000000000063d4      0x1f4 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_mul_sf.o)
+                0x00000000000063d4                __mulsf3
+ .text          0x00000000000065c8      0x15c /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_div_sf.o)
+                0x00000000000065c8                __divsf3
+ .text          0x0000000000006724       0x60 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_gt_sf.o)
+                0x0000000000006724                __gtsf2
+ .text          0x0000000000006784       0x60 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_ge_sf.o)
+                0x0000000000006784                __gesf2
+ .text          0x00000000000067e4       0x60 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_lt_sf.o)
+                0x00000000000067e4                __ltsf2
+ .text          0x0000000000006844       0x60 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_le_sf.o)
+                0x0000000000006844                __lesf2
+ .text          0x00000000000068a4       0x5a /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_unord_sf.o)
+                0x00000000000068a4                __unordsf2
+ .text          0x00000000000068fe       0xc0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_si_to_sf.o)
+                0x00000000000068fe                __floatsisf
+ .text          0x00000000000069be       0xa4 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_sf_to_si.o)
+                0x00000000000069be                __fixsfsi
+ .text          0x0000000000006a62        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_thenan_sf.o)
+ .text          0x0000000000006a62       0xf0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_usi_to_sf.o)
+                0x0000000000006a62                __floatunsisf
+ .text          0x0000000000006b52        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_prologue.o)
+ .text          0x0000000000006b52        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_epilogue.o)
+ .text          0x0000000000006b52        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_tablejump_elpm.o)
+ .text          0x0000000000006b52       0xb4 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_clzsi2.o)
+                0x0000000000006b52                __clzsi2
+ .text          0x0000000000006c06      0x19c /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_pack_sf.o)
+                0x0000000000006c06                __pack_f
+ .text          0x0000000000006da2       0xd2 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_unpack_sf.o)
+                0x0000000000006da2                __unpack_f
+ .text          0x0000000000006e74       0xb2 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_fpcmp_parts_sf.o)
+                0x0000000000006e74                __fpcmp_parts_f
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_clz.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(malloc.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(random.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(realloc.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(atol.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(isspace.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(tolower.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(toupper.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memcmp.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memcpy.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memmove.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strchr.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strcmp.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strcpy.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strncmp.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strncpy.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strrchr.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strstr.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(itoa.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(ltoa.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(mulsi10.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(ultoa.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(utoa.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(cty_isfalse.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strrev.o)
+ .text          0x0000000000006f26        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_udivmodhi4.o)
+                0x0000000000006f26                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x0000000000006f26       0x3e /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_mulsi3.o)
+                0x0000000000006f26                __mulsi3
+ .text.libgcc   0x0000000000006f64       0x44 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_udivmodsi4.o)
+                0x0000000000006f64                __udivmodsi4
+ .text.libgcc   0x0000000000006fa8       0x36 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_divmodsi4.o)
+                0x0000000000006fa8                __divmodsi4
+ .text.libgcc   0x0000000000006fde        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000006fde        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000006fde        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000006fde        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_ctors.o)
+ .text.libgcc   0x0000000000006fde       0x38 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_prologue.o)
+                0x0000000000006fde                __prologue_saves__
+ .text.libgcc   0x0000000000007016       0x36 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_epilogue.o)
+                0x0000000000007016                __epilogue_restores__
+ .text.libgcc   0x000000000000704c        0x8 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_tablejump_elpm.o)
+                0x000000000000704c                __tablejump_elpm__
+ .text.avr-libc
+                0x0000000000007054      0x266 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(malloc.o)
+                0x0000000000007054                malloc
+                0x0000000000007188                free
+ .text.avr-libc
+                0x00000000000072ba       0xbe /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(random.o)
+                0x0000000000007356                random_r
+                0x000000000000735c                random
+                0x0000000000007366                srandom
+ .text.avr-libc
+                0x0000000000007378      0x1b2 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(realloc.o)
+                0x0000000000007378                realloc
+ .text.avr-libc
+                0x000000000000752a       0x4e /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(atol.o)
+                0x000000000000752a                atol
+ .text.avr-libc
+                0x0000000000007578       0x10 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(isspace.o)
+                0x0000000000007578                isspace
+ .text.avr-libc
+                0x0000000000007588       0x10 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(tolower.o)
+                0x0000000000007588                tolower
+ .text.avr-libc
+                0x0000000000007598       0x10 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(toupper.o)
+                0x0000000000007598                toupper
+ .text.avr-libc
+                0x00000000000075a8       0x1a /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memcmp.o)
+                0x00000000000075a8                memcmp
+ .text.avr-libc
+                0x00000000000075c2       0x12 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memcpy.o)
+                0x00000000000075c2                memcpy
+ .text.avr-libc
+                0x00000000000075d4       0x24 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memmove.o)
+                0x00000000000075d4                memmove
+ .text.avr-libc
+                0x00000000000075f8       0x16 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strchr.o)
+                0x00000000000075f8                strchr
+ .text.avr-libc
+                0x000000000000760e       0x12 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strcmp.o)
+                0x000000000000760e                strcmp
+ .text.avr-libc
+                0x0000000000007620        0xe /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strcpy.o)
+                0x0000000000007620                strcpy
+ .text.avr-libc
+                0x000000000000762e       0x1c /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strncmp.o)
+                0x000000000000762e                strncmp
+ .text.avr-libc
+                0x000000000000764a       0x1e /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strncpy.o)
+                0x000000000000764a                strncpy
+ .text.avr-libc
+                0x0000000000007668       0x16 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strrchr.o)
+                0x0000000000007668                strrchr
+ .text.avr-libc
+                0x000000000000767e       0x34 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strstr.o)
+                0x000000000000767e                strstr
+ .text.avr-libc
+                0x00000000000076b2       0x42 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(itoa.o)
+                0x00000000000076b2                itoa
+ .text.avr-libc
+                0x00000000000076f4       0x68 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(ltoa.o)
+                0x00000000000076f4                ltoa
+ .text.avr-libc
+                0x000000000000775c       0x2a /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(mulsi10.o)
+                0x000000000000775c                __mulsi_const_10
+ .text.avr-libc
+                0x0000000000007786       0x4a /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(ultoa.o)
+                0x0000000000007786                ultoa
+ .text.avr-libc
+                0x00000000000077d0       0x2c /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(utoa.o)
+                0x00000000000077d0                utoa
+ .text.avr-libc
+                0x00000000000077fc        0x6 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(cty_isfalse.o)
+                0x00000000000077fc                __ctype_isfalse
+                0x0000000000007800                __ctype_istrue
+ .text.avr-libc
+                0x0000000000007802       0x20 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strrev.o)
+                0x0000000000007802                strrev
+ .text.libgcc   0x0000000000007822       0x28 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_udivmodhi4.o)
+                0x0000000000007822                __udivmodhi4
+                0x000000000000784a                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000000000000784a        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_exit.o)
+                0x000000000000784a                exit
+                0x000000000000784a                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000000000000784a        0x4 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_exit.o)
+ *(.fini0)
+                0x000000000000784e                _etext = .
+
+.data           0x0000000000800200      0x2e0 load address 0x000000000000784e
+                0x0000000000800200                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x0000000000800200        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+ .data          0x0000000000800200       0x83 ./src/main.o
+                0x000000000080026f                mac
+                0x0000000000800275                server_port
+                0x0000000000800279                udp_port
+                0x000000000080027d                _ZTV9Printable
+ .data          0x0000000000800283        0x6 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+ .data          0x0000000000800289       0x50 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+                0x0000000000800289                _ZN14EthernetClient8_srcportE
+                0x000000000080028b                _ZTV14EthernetClient
+                0x00000000008002ad                _ZTV6Client
+                0x00000000008002c9                _ZTV6Stream
+ .data          0x00000000008002d9       0x40 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+                0x00000000008002d9                _ZTV14EthernetServer
+                0x000000000080030f                _ZTV6Server
+ .data          0x0000000000800319       0x5e /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                0x0000000000800319                _ZTV11EthernetUDP
+                0x0000000000800343                _ZTV3UDP
+ .data          0x0000000000800377       0x20 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+                0x0000000000800377                _ZTV14HardwareSerial
+ .data          0x0000000000800397        0xc /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+                0x0000000000800397                _ZTV9IPAddress
+ .data          0x00000000008003a3       0x16 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+                0x00000000008003b1                _ZTV5Print
+ .data          0x00000000008003b9        0x1 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+ .data          0x00000000008003ba        0x0 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(new.o)
+ .data          0x00000000008003ba        0x0 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring.o)
+ .data          0x00000000008003ba        0x0 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring_digital.o)
+ .data          0x00000000008003ba        0x0 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+ .data          0x00000000008003ba        0x0 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+ .data          0x00000000008003ba        0xd /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+ .data          0x00000000008003c7        0x6 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+ .data          0x00000000008003cd        0x0 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(SPI.o)
+ .data          0x00000000008003cd        0x0 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WMath.o)
+ .data          0x00000000008003cd        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_mulsi3.o)
+ .data          0x00000000008003cd        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_udivmodsi4.o)
+ .data          0x00000000008003cd        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_divmodsi4.o)
+ .data          0x00000000008003cd        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_exit.o)
+ .data          0x00000000008003cd        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_copy_data.o)
+ .data          0x00000000008003cd        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_clear_bss.o)
+ .data          0x00000000008003cd        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_ctors.o)
+ .data          0x00000000008003cd        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_fixunssfsi.o)
+ .data          0x00000000008003cd        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_addsub_sf.o)
+ .data          0x00000000008003cd        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_mul_sf.o)
+ .data          0x00000000008003cd        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_div_sf.o)
+ .data          0x00000000008003cd        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_gt_sf.o)
+ .data          0x00000000008003cd        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_ge_sf.o)
+ .data          0x00000000008003cd        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_lt_sf.o)
+ .data          0x00000000008003cd        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_le_sf.o)
+ .data          0x00000000008003cd        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_unord_sf.o)
+ .data          0x00000000008003cd        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_si_to_sf.o)
+ .data          0x00000000008003cd        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_sf_to_si.o)
+ .data          0x00000000008003cd        0x8 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_thenan_sf.o)
+                0x00000000008003cd                __thenan_sf
+ .data          0x00000000008003d5        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_usi_to_sf.o)
+ .data          0x00000000008003d5        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_prologue.o)
+ .data          0x00000000008003d5        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_epilogue.o)
+ .data          0x00000000008003d5        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_tablejump_elpm.o)
+ .data          0x00000000008003d5        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_clzsi2.o)
+ .data          0x00000000008003d5        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_pack_sf.o)
+ .data          0x00000000008003d5        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_unpack_sf.o)
+ .data          0x00000000008003d5        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_fpcmp_parts_sf.o)
+ .data          0x00000000008003d5      0x100 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_clz.o)
+                0x00000000008003d5                __clz_tab
+ .data          0x00000000008004d5        0x6 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(malloc.o)
+                0x00000000008004d5                __malloc_margin
+                0x00000000008004d7                __malloc_heap_start
+                0x00000000008004d9                __malloc_heap_end
+ .data          0x00000000008004db        0x4 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(random.o)
+ .data          0x00000000008004df        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(realloc.o)
+ .data          0x00000000008004df        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(atol.o)
+ .data          0x00000000008004df        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(isspace.o)
+ .data          0x00000000008004df        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(tolower.o)
+ .data          0x00000000008004df        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(toupper.o)
+ .data          0x00000000008004df        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memcmp.o)
+ .data          0x00000000008004df        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memcpy.o)
+ .data          0x00000000008004df        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memmove.o)
+ .data          0x00000000008004df        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strchr.o)
+ .data          0x00000000008004df        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strcmp.o)
+ .data          0x00000000008004df        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strcpy.o)
+ .data          0x00000000008004df        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strncmp.o)
+ .data          0x00000000008004df        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strncpy.o)
+ .data          0x00000000008004df        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strrchr.o)
+ .data          0x00000000008004df        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strstr.o)
+ .data          0x00000000008004df        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(itoa.o)
+ .data          0x00000000008004df        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(ltoa.o)
+ .data          0x00000000008004df        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(mulsi10.o)
+ .data          0x00000000008004df        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(ultoa.o)
+ .data          0x00000000008004df        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(utoa.o)
+ .data          0x00000000008004df        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(cty_isfalse.o)
+ .data          0x00000000008004df        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strrev.o)
+ .data          0x00000000008004df        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_udivmodhi4.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00000000008004e0                . = ALIGN (0x2)
+ *fill*         0x00000000008004df        0x1 00
+                0x00000000008004e0                _edata = .
+                0x00000000008004e0                PROVIDE (__data_end, .)
+
+.bss            0x00000000008004e0      0x43d
+                0x00000000008004e0                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00000000008004e0        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+ .bss           0x00000000008004e0      0x136 ./src/main.o
+                0x00000000008004e0                ip
+                0x00000000008004e6                server_ip
+                0x00000000008004ec                udp
+                0x0000000000800507                cmd_server
+                0x000000000080050d                sensors_pin
+                0x000000000080050e                infop
+                0x000000000080060f                new_data
+ .bss           0x0000000000800616       0x1a /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+                0x0000000000800616                _ZN13EthernetClass6_stateE
+                0x000000000080061a                _ZN13EthernetClass12_server_portE
+                0x0000000000800622                Ethernet
+ .bss           0x0000000000800630        0x6 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+ .bss           0x0000000000800636        0x6 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+ .bss           0x000000000080063c        0x6 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+ .bss           0x0000000000800642      0x2a8 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+                0x0000000000800642                rx_buffer
+                0x0000000000800686                tx_buffer
+                0x00000000008006ca                rx_buffer1
+                0x000000000080070e                tx_buffer1
+                0x0000000000800752                rx_buffer2
+                0x0000000000800796                tx_buffer2
+                0x00000000008007da                rx_buffer3
+                0x000000000080081e                tx_buffer3
+                0x0000000000800862                Serial
+                0x0000000000800884                Serial1
+                0x00000000008008a6                Serial2
+                0x00000000008008c8                Serial3
+ .bss           0x00000000008008ea        0x6 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+ .bss           0x00000000008008f0        0x0 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+ .bss           0x00000000008008f0        0x1 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+ .bss           0x00000000008008f1        0x0 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(new.o)
+ .bss           0x00000000008008f1        0x9 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring.o)
+                0x00000000008008f1                timer0_overflow_count
+                0x00000000008008f5                timer0_millis
+ .bss           0x00000000008008fa        0x0 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring_digital.o)
+ .bss           0x00000000008008fa        0x2 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+ .bss           0x00000000008008fc       0x10 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+                0x00000000008008fc                W5100
+ .bss           0x000000000080090c        0x6 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+ .bss           0x0000000000800912        0x6 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+ .bss           0x0000000000800918        0x1 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(SPI.o)
+                0x0000000000800918                SPI
+ .bss           0x0000000000800919        0x0 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WMath.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_mulsi3.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_udivmodsi4.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_divmodsi4.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_exit.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_copy_data.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_clear_bss.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_ctors.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_fixunssfsi.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_addsub_sf.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_mul_sf.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_div_sf.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_gt_sf.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_ge_sf.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_lt_sf.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_le_sf.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_unord_sf.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_si_to_sf.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_sf_to_si.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_thenan_sf.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_usi_to_sf.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_prologue.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_epilogue.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_tablejump_elpm.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_clzsi2.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_pack_sf.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_unpack_sf.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_fpcmp_parts_sf.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_clz.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(malloc.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(random.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(realloc.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(atol.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(isspace.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(tolower.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(toupper.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memcmp.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memcpy.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memmove.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strchr.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strcmp.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strcpy.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strncmp.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strncpy.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strrchr.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strstr.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(itoa.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(ltoa.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(mulsi10.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(ultoa.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(utoa.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(cty_isfalse.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strrev.o)
+ .bss           0x0000000000800919        0x0 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_udivmodhi4.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x0000000000800919        0x4 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(malloc.o)
+                0x0000000000800919                __brkval
+                0x000000000080091b                __flp
+                0x000000000080091d                PROVIDE (__bss_end, .)
+                0x000000000000784e                __data_load_start = LOADADDR (.data)
+                0x0000000000007b2e                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x000000000080091d        0x0
+                0x000000000080091d                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x000000000080091d                PROVIDE (__noinit_end, .)
+                0x000000000080091d                _end = .
+                0x000000000080091d                PROVIDE (__heap_start, .)
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(sensecar_arduino2.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+DNSClient::BuildRequest(char const*)              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+DNSClient::DNSClient()                            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+DNSClient::ProcessResponse(unsigned int, IPAddress&) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+DNSClient::begin(IPAddress const&)                /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+DNSClient::getHostByName(char const*, IPAddress&) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+DNSClient::inet_aton(char const*, IPAddress&)     /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+DhcpClass::beginWithDHCP(unsigned char*, unsigned long, unsigned long) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+DhcpClass::checkLease()                           /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+DhcpClass::getDhcpServerIp()                      /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+DhcpClass::getDnsServerIp()                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+DhcpClass::getGatewayIp()                         /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+DhcpClass::getLocalIp()                           /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+DhcpClass::getSubnetMask()                        /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+DhcpClass::parseDHCPResponse(unsigned long, unsigned long&) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+DhcpClass::presend_DHCP()                         /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+DhcpClass::printByte(char*, unsigned char)        /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+DhcpClass::request_DHCP_lease()                   /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+DhcpClass::reset_DHCP_lease()                     /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+DhcpClass::send_DHCP_MESSAGE(unsigned char, unsigned int) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+Ethernet                                          /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+                                                  ./src/main.o
+EthernetClass::_server_port                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+EthernetClass::_state                             /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+EthernetClass::begin(unsigned char*)              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+EthernetClass::begin(unsigned char*, IPAddress)   /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+                                                  ./src/main.o
+EthernetClass::begin(unsigned char*, IPAddress, IPAddress) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+EthernetClass::begin(unsigned char*, IPAddress, IPAddress, IPAddress) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+EthernetClass::begin(unsigned char*, IPAddress, IPAddress, IPAddress, IPAddress) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+EthernetClass::dnsServerIP()                      /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+EthernetClass::gatewayIP()                        /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+EthernetClass::localIP()                          /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+EthernetClass::maintain()                         /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+EthernetClass::subnetMask()                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+EthernetClient::EthernetClient()                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+EthernetClient::EthernetClient()                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+EthernetClient::EthernetClient(unsigned char)     /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+EthernetClient::EthernetClient(unsigned char)     /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+EthernetClient::_srcport                          /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+EthernetClient::available()                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+EthernetClient::connect(IPAddress, unsigned int)  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+EthernetClient::connect(char const*, unsigned int) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+EthernetClient::connected()                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+                                                  ./src/main.o
+EthernetClient::flush()                           /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+EthernetClient::operator bool()                   /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+EthernetClient::peek()                            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+EthernetClient::read()                            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+EthernetClient::read(unsigned char*, unsigned int) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+EthernetClient::status()                          /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+EthernetClient::stop()                            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+                                                  ./src/main.o
+EthernetClient::write(unsigned char const*, unsigned int) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+EthernetClient::write(unsigned char)              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+EthernetServer::EthernetServer(unsigned int)      /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+EthernetServer::EthernetServer(unsigned int)      /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+                                                  ./src/main.o
+EthernetServer::accept()                          /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+EthernetServer::available()                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+                                                  ./src/main.o
+EthernetServer::begin()                           /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+                                                  ./src/main.o
+EthernetServer::write(unsigned char const*, unsigned int) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+EthernetServer::write(unsigned char)              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+EthernetUDP::EthernetUDP()                        /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+EthernetUDP::EthernetUDP()                        /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+                                                  ./src/main.o
+EthernetUDP::available()                          /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+EthernetUDP::begin(unsigned int)                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+                                                  ./src/main.o
+EthernetUDP::beginPacket(IPAddress, unsigned int) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+                                                  ./src/main.o
+EthernetUDP::beginPacket(char const*, unsigned int) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+EthernetUDP::endPacket()                          /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+                                                  ./src/main.o
+EthernetUDP::flush()                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+EthernetUDP::parsePacket()                        /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+EthernetUDP::peek()                               /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+EthernetUDP::read()                               /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+EthernetUDP::read(char*, unsigned int)            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+EthernetUDP::read(unsigned char*, unsigned int)   /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+EthernetUDP::remoteIP()                           /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+EthernetUDP::remotePort()                         /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+EthernetUDP::stop()                               /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+EthernetUDP::write(unsigned char const*, unsigned int) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+                                                  ./src/main.o
+EthernetUDP::write(unsigned char)                 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+HardwareSerial::HardwareSerial(ring_buffer*, ring_buffer*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+HardwareSerial::HardwareSerial(ring_buffer*, ring_buffer*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+HardwareSerial::available()                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+HardwareSerial::begin(unsigned long)              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+                                                  ./src/main.o
+HardwareSerial::begin(unsigned long, unsigned char) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+HardwareSerial::end()                             /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+HardwareSerial::flush()                           /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+HardwareSerial::operator bool()                   /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+HardwareSerial::peek()                            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+HardwareSerial::read()                            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+HardwareSerial::write(unsigned char)              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+IPAddress::IPAddress()                            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+IPAddress::IPAddress()                            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+IPAddress::IPAddress(unsigned char const*)        /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+IPAddress::IPAddress(unsigned char const*)        /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+IPAddress::IPAddress(unsigned char, unsigned char, unsigned char, unsigned char) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+                                                  ./src/main.o
+IPAddress::IPAddress(unsigned char, unsigned char, unsigned char, unsigned char) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+IPAddress::IPAddress(unsigned long)               /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+IPAddress::IPAddress(unsigned long)               /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+IPAddress::operator=(unsigned char const*)        /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+IPAddress::operator=(unsigned long)               /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+IPAddress::operator==(unsigned char const*)       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+IPAddress::printTo(Print&) const                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+Print::print(Printable const&)                    /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+Print::print(String const&)                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+Print::print(__FlashStringHelper const*)          /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+Print::print(char const*)                         /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+Print::print(char)                                /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+Print::print(double, int)                         /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+Print::print(int, int)                            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+Print::print(long, int)                           /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+Print::print(unsigned char, int)                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+Print::print(unsigned int, int)                   /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+Print::print(unsigned long, int)                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+Print::printFloat(double, unsigned char)          /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+Print::printNumber(unsigned long, unsigned char)  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+Print::println()                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+Print::println(Printable const&)                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+Print::println(String const&)                     /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+Print::println(__FlashStringHelper const*)        /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+Print::println(char const*)                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+                                                  ./src/main.o
+Print::println(char)                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+Print::println(double, int)                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+Print::println(int, int)                          /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+Print::println(long, int)                         /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+Print::println(unsigned char, int)                /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+Print::println(unsigned int, int)                 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+Print::println(unsigned long, int)                /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+Print::write(char const*)                         /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+Print::write(unsigned char const*, unsigned int)  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+SPI                                               /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(SPI.o)
+SPIClass::begin()                                 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(SPI.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+SPIClass::end()                                   /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(SPI.o)
+SPIClass::setBitOrder(unsigned char)              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(SPI.o)
+SPIClass::setClockDivider(unsigned char)          /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(SPI.o)
+SPIClass::setDataMode(unsigned char)              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(SPI.o)
+SPIClass::transfer(unsigned char)                 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+Serial                                            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+                                                  ./src/main.o
+Serial1                                           /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+Serial2                                           /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+Serial3                                           /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+String::String(String const&)                     /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::String(String const&)                     /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::String(char const*)                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::String(char const*)                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::String(char)                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::String(char)                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::String(int, unsigned char)                /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::String(int, unsigned char)                /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::String(long, unsigned char)               /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::String(long, unsigned char)               /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::String(unsigned char, unsigned char)      /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::String(unsigned char, unsigned char)      /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::String(unsigned int, unsigned char)       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::String(unsigned int, unsigned char)       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::String(unsigned long, unsigned char)      /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::String(unsigned long, unsigned char)      /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::changeBuffer(unsigned int)                /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::charAt(unsigned int) const                /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::compareTo(String const&) const            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::concat(String const&)                     /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::concat(char const*)                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::concat(char const*, unsigned int)         /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::concat(char)                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::concat(int)                               /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::concat(long)                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::concat(unsigned char)                     /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::concat(unsigned int)                      /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::concat(unsigned long)                     /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::copy(char const*, unsigned int)           /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::endsWith(String const&) const             /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::equals(String const&) const               /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::equals(char const*) const                 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::equalsIgnoreCase(String const&) const     /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::getBytes(unsigned char*, unsigned int, unsigned int) const /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::indexOf(String const&) const              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::indexOf(String const&, unsigned int) const /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::indexOf(char) const                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::indexOf(char, unsigned int) const         /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::invalidate()                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::lastIndexOf(String const&) const          /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::lastIndexOf(String const&, unsigned int) const /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::lastIndexOf(char) const                   /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::lastIndexOf(char, unsigned int) const     /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::operator<(String const&) const            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::operator<=(String const&) const           /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::operator=(String const&)                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::operator=(char const*)                    /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::operator>(String const&) const            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::operator>=(String const&) const           /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::operator[](unsigned int)                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::operator[](unsigned int) const            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+String::replace(String const&, String const&)     /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::replace(char, char)                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::reserve(unsigned int)                     /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::setCharAt(unsigned int, char)             /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::startsWith(String const&) const           /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::startsWith(String const&, unsigned int) const /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::substring(unsigned int) const             /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::substring(unsigned int, unsigned int) const /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::toInt() const                             /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::toLowerCase()                             /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::toUpperCase()                             /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::trim()                                    /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::~String()                                 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+String::~String()                                 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+W5100                                             /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+W5100Class::execCmdSn(unsigned char, SockCMD)     /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+W5100Class::getRXReceivedSize(unsigned char)      /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+W5100Class::getTXFreeSize(unsigned char)          /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+W5100Class::init()                                /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+W5100Class::initSS()                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+W5100Class::read(unsigned int)                    /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+W5100Class::read(unsigned int, unsigned char*, unsigned int) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+W5100Class::readGAR(unsigned char*)               /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+W5100Class::readSIPR(unsigned char*)              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+W5100Class::readSUBR(unsigned char*)              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+W5100Class::readSn(unsigned char, unsigned int)   /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+W5100Class::readSnCR(unsigned char)               /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+W5100Class::readSnIR(unsigned char)               /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+W5100Class::readSnMR(unsigned char)               /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+W5100Class::readSnRX_RD(unsigned char)            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+W5100Class::readSnRX_RSR(unsigned char)           /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+W5100Class::readSnSR(unsigned char)               /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+W5100Class::readSnTX_FSR(unsigned char)           /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+W5100Class::readSnTX_WR(unsigned char)            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+W5100Class::read_data(unsigned char, unsigned char volatile*, unsigned char volatile*, unsigned int) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+W5100Class::recv_data_processing(unsigned char, unsigned char*, unsigned int, unsigned char) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+W5100Class::resetSS()                             /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+W5100Class::send_data_processing(unsigned char, unsigned char const*, unsigned int) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+W5100Class::send_data_processing_offset(unsigned char, unsigned int, unsigned char const*, unsigned int) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+W5100Class::setSS()                               /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+W5100Class::write(unsigned int, unsigned char const*, unsigned int) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+W5100Class::write(unsigned int, unsigned char)    /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+W5100Class::writeGAR(unsigned char*)              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+W5100Class::writeMR(unsigned char)                /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+W5100Class::writeRMSR(unsigned char)              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+W5100Class::writeSHAR(unsigned char*)             /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+W5100Class::writeSIPR(unsigned char*)             /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+W5100Class::writeSUBR(unsigned char*)             /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+W5100Class::writeSn(unsigned char, unsigned int, unsigned char) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+W5100Class::writeSn(unsigned char, unsigned int, unsigned char*, unsigned int) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+W5100Class::writeSnCR(unsigned char, unsigned char) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+W5100Class::writeSnDIPR(unsigned char, unsigned char*) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+W5100Class::writeSnDPORT(unsigned char, unsigned int) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+W5100Class::writeSnIR(unsigned char, unsigned char) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+W5100Class::writeSnMR(unsigned char, unsigned char) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+W5100Class::writeSnPORT(unsigned char, unsigned int) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+W5100Class::writeSnRX_RD(unsigned char, unsigned int) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+W5100Class::writeSnTX_WR(unsigned char, unsigned int) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+W5100Class::writeTMSR(unsigned char)              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+__addsf3                                          /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_addsub_sf.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+__bad_interrupt                                   /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__brkval                                          /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(realloc.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(malloc.o)
+__bss_end                                         /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_clear_bss.o)
+__clz_tab                                         /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_clz.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_clzsi2.o)
+__clzsi2                                          /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_clzsi2.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_usi_to_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_si_to_sf.o)
+__ctors_end                                       /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_ctors.o)
+__ctors_start                                     /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_ctors.o)
+__ctype_isfalse                                   /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(cty_isfalse.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(isspace.o)
+__ctype_istrue                                    /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(cty_isfalse.o)
+__cxa_guard_abort                                 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(new.o)
+__cxa_guard_acquire                               /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(new.o)
+__cxa_guard_release                               /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(new.o)
+__cxa_pure_virtual                                /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(new.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+                                                  ./src/main.o
+__data_end                                        /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_copy_data.o)
+__data_start                                      /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_copy_data.o)
+__divmodsi4                                       /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_divmodsi4.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(random.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WMath.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+__divsf3                                          /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_div_sf.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+__do_clear_bss                                    /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_clear_bss.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(malloc.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(SPI.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+                                                  ./src/main.o
+__do_copy_data                                    /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_copy_data.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(random.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(malloc.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_clz.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_thenan_sf.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+                                                  ./src/main.o
+__do_global_ctors                                 /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_ctors.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+                                                  ./src/main.o
+__epilogue_restores__                             /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_epilogue.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_pack_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_usi_to_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_sf_to_si.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_si_to_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_unord_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_le_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_lt_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_ge_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_gt_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_div_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_mul_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_addsub_sf.o)
+__fixsfsi                                         /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_sf_to_si.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_fixunssfsi.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+__fixunssfsi                                      /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_fixunssfsi.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+__floatsisf                                       /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_si_to_sf.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+__floatunsisf                                     /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_usi_to_sf.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+__flp                                             /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(realloc.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(malloc.o)
+__fpcmp_parts_f                                   /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_fpcmp_parts_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_le_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_lt_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_ge_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_gt_sf.o)
+__gesf2                                           /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_ge_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_fixunssfsi.o)
+__gtsf2                                           /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_gt_sf.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+__heap_end                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(malloc.o)
+__heap_start                                      /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(malloc.o)
+__init                                            /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__lesf2                                           /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_le_sf.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+__ltsf2                                           /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_lt_sf.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+__malloc_heap_end                                 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(malloc.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(realloc.o)
+__malloc_heap_start                               /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(malloc.o)
+__malloc_margin                                   /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(malloc.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(realloc.o)
+__mulsf3                                          /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_mul_sf.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+__mulsi3                                          /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_mulsi3.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(random.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WMath.o)
+__mulsi_const_10                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(mulsi10.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(atol.o)
+__pack_f                                          /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_pack_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_usi_to_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_si_to_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_div_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_mul_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_addsub_sf.o)
+__prologue_saves__                                /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_prologue.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_usi_to_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_sf_to_si.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_si_to_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_unord_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_le_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_lt_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_ge_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_gt_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_div_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_mul_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_addsub_sf.o)
+__stack                                           /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__subsf3                                          /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_addsub_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_fixunssfsi.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+__tablejump_elpm__                                /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_tablejump_elpm.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_ctors.o)
+__thenan_sf                                       /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_thenan_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_div_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_mul_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_addsub_sf.o)
+__udivmodhi4                                      /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_udivmodhi4.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(utoa.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(itoa.o)
+__udivmodsi4                                      /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_udivmodsi4.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(ultoa.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(ltoa.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_divmodsi4.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+__unordsf2                                        /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_unord_sf.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+__unpack_f                                        /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_unpack_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_sf_to_si.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_unord_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_le_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_lt_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_ge_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_gt_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_div_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_mul_sf.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_addsub_sf.o)
+__vector_1                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_10                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_11                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_12                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_13                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_14                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_15                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_16                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_17                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_18                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_19                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_2                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_20                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_21                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_22                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_23                                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_24                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_25                                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_26                                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_27                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_28                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_29                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_3                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_30                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_31                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_32                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_33                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_34                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_35                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_36                                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_37                                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_38                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_39                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_4                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_40                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_41                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_42                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_43                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_44                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_45                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_46                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_47                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_48                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_49                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_5                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_50                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_51                                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_52                                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_53                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_54                                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_55                                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_56                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_6                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_7                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_8                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_9                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vector_default                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+__vectors                                         /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+_exit                                             /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_exit.o)
+atol                                              /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(atol.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+bufferData(unsigned char, unsigned int, unsigned char const*, unsigned int) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+check_incomming_comm()                            ./src/main.o
+check_sensors()                                   ./src/main.o
+close(unsigned char)                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+cmd_server                                        ./src/main.o
+connect(unsigned char, unsigned char*, unsigned int) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+delay                                             /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(w5100.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+                                                  ./src/main.o
+delayMicroseconds                                 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring.o)
+digitalRead                                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring_digital.o)
+                                                  ./src/main.o
+digitalWrite                                      /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring_digital.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(SPI.o)
+digital_pin_to_bit_mask_PGM                       /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring_digital.o)
+digital_pin_to_port_PGM                           /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring_digital.o)
+digital_pin_to_timer_PGM                          /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring_digital.o)
+disconnect(unsigned char)                         /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+exit                                              /usr/lib/gcc/avr/4.5.3/avr6/libgcc.a(_exit.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+free                                              /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(malloc.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(realloc.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(new.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+igmpsend(unsigned char, unsigned char const*, unsigned int) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+infop                                             ./src/main.o
+inform_data()                                     ./src/main.o
+init                                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring.o)
+                                                  ./src/main.o
+ip                                                ./src/main.o
+isspace                                           /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(isspace.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+itoa                                              /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(itoa.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+listen(unsigned char)                             /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+loop                                              ./src/main.o
+ltoa                                              /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(ltoa.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+mac                                               ./src/main.o
+main                                              ./src/main.o
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/crtm2560.o
+makeWord(unsigned char, unsigned char)            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WMath.o)
+makeWord(unsigned int)                            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WMath.o)
+malloc                                            /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(malloc.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(realloc.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(new.o)
+map(long, long, long, long, long)                 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WMath.o)
+memcmp                                            /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memcmp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+memcpy                                            /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memcpy.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memmove.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(realloc.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+memmove                                           /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(memmove.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+micros                                            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring.o)
+millis                                            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+new_data                                          ./src/main.o
+operator delete(void*)                            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(new.o)
+operator new(unsigned int)                        /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(new.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+operator+(StringSumHelper const&, String const&)  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+operator+(StringSumHelper const&, char const*)    /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+operator+(StringSumHelper const&, char)           /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+operator+(StringSumHelper const&, int)            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+operator+(StringSumHelper const&, long)           /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+operator+(StringSumHelper const&, unsigned char)  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+operator+(StringSumHelper const&, unsigned int)   /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+operator+(StringSumHelper const&, unsigned long)  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+peek(unsigned char, unsigned char*)               /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+pinMode                                           /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring_digital.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(SPI.o)
+                                                  ./src/main.o
+port_to_input_PGM                                 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring_digital.o)
+port_to_mode_PGM                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring_digital.o)
+port_to_output_PGM                                /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring_digital.o)
+random                                            /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(random.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WMath.o)
+random(long)                                      /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WMath.o)
+random(long, long)                                /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WMath.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+randomSeed(unsigned int)                          /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WMath.o)
+random_r                                          /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(random.o)
+realloc                                           /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(realloc.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+recv(unsigned char, unsigned char*, int)          /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+recvfrom(unsigned char, unsigned char*, unsigned int, unsigned char*, unsigned int*) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+rx_buffer                                         /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+rx_buffer1                                        /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+rx_buffer2                                        /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+rx_buffer3                                        /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+send(unsigned char, unsigned char const*, unsigned int) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+sendUDP(unsigned char)                            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+sendto(unsigned char, unsigned char const*, unsigned int, unsigned char*, unsigned int) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+sensors_pin                                       ./src/main.o
+serialEvent()                                     /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+serialEvent1()                                    /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+serialEvent2()                                    /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+serialEvent3()                                    /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+serialEventRun()                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+server_ip                                         ./src/main.o
+server_port                                       ./src/main.o
+set_pins()                                        ./src/main.o
+setup                                             ./src/main.o
+socket(unsigned char, unsigned char, unsigned int, unsigned char) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+srandom                                           /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(random.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WMath.o)
+startUDP(unsigned char, unsigned char*, unsigned int) /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(socket.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+store_char(unsigned char, ring_buffer*)           /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+strchr                                            /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strchr.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+strcmp                                            /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strcmp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+strcpy                                            /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strcpy.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+strncmp                                           /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strncmp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+strncpy                                           /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strncpy.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+strrchr                                           /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strrchr.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+strrev                                            /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strrev.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(utoa.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(ultoa.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(ltoa.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(itoa.o)
+strstr                                            /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(strstr.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+timer0_millis                                     /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring.o)
+timer0_overflow_count                             /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(wiring.o)
+tolower                                           /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(tolower.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+toupper                                           /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(toupper.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+tx_buffer                                         /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+tx_buffer1                                        /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+tx_buffer2                                        /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+tx_buffer3                                        /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+udp                                               ./src/main.o
+udp_port                                          ./src/main.o
+ultoa                                             /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(ultoa.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+utoa                                              /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr6/libc.a(utoa.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(WString.o)
+vtable for Client                                 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+vtable for EthernetClient                         /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+                                                  ./src/main.o
+vtable for EthernetServer                         /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+vtable for EthernetUDP                            /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+vtable for HardwareSerial                         /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(HardwareSerial.o)
+vtable for IPAddress                              /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(IPAddress.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dns.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Dhcp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+                                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Ethernet.o)
+                                                  ./src/main.o
+vtable for Print                                  /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(Print.o)
+vtable for Printable                              ./src/main.o
+vtable for Server                                 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetServer.o)
+vtable for Stream                                 /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetClient.o)
+vtable for UDP                                    /home/facundo/workspace/ArduinoEthernet/Release/libArduinoEthernet.a(EthernetUdp.o)
