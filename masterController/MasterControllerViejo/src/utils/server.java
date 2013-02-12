@@ -1,6 +1,6 @@
 package utils;
 
-import info_module.InfoModuleSensorsServer;
+import info_module.InfoModule;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -8,7 +8,7 @@ import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import ctrl_module.CtrlModuleServer;
+import ctrl_module.CtrlModule;
 
 import main_module.MainModule;
 
