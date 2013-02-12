@@ -7,8 +7,6 @@ import java.net.Socket;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
-import utils.Message;
-
 public class CtrlModuleClient implements Runnable {
 	private Socket serverSocket;
 	private OutputStream out;
@@ -18,45 +16,53 @@ public class CtrlModuleClient implements Runnable {
 	private CtrlModuleServer ctrlModuleServer; // Seteado desde CtrlModuleServer
 	private int bufferSize = 256;
 	
-	private BlockingQueue<Message> messages;
+	private BlockingQueue<String> messages;
 	
 	public CtrlModuleClient() {
-		this.messages = new LinkedBlockingQueue<Message>();
+		this.messages = new LinkedBlockingQueue<String>();
 	}
 
 	@Override
 	public void run() {
-		try {
-			do {
-				byte[] buf = new byte[bufferSize];
-				System.out.println("Trying to send commands to " + serverIp + " on port " + serverPort);
-				Message message = messages.take();
-				serverSocket = new Socket(serverIp, serverPort);
-				out = serverSocket.getOutputStream();
-				in = serverSocket.getInputStream();
-				sendMessage(message.toString());
-				int size = in.read(buf);
-				StringBuilder cmd = new StringBuilder();
-				if(size > 0) {
-					for (int i = 0; i < size; i++) {
-						cmd.append((char) buf[i]); 
-					}
-					ctrlModuleServer.addMessage(new Message("", "", cmd.toString()));
-				}
-				serverSocket.close();
-			} while (!Thread.interrupted());
-		} catch (IOException | InterruptedException ioException) {
-			ioException.printStackTrace();
-		} finally {
-			// 4: Closing connection
+		do {
 			try {
-				in.close();
-				out.close();
-				serverSocket.close();
-			} catch (IOException ioException) {
-				ioException.printStackTrace();
+				do {
+					byte[] buf = new byte[bufferSize];
+					System.out.println("Trying to send commands to " + serverIp + " on port " + serverPort);
+					String message = messages.take();
+					serverSocket = new Socket(serverIp, serverPort);
+					out = serverSocket.getOutputStream();
+					in = serverSocket.getInputStream();
+					sendMessage(message.toString());
+					int size = in.read(buf);
+					StringBuilder cmd = new StringBuilder();
+					if(size > 0) {
+						for (int i = 0; i < size; i++) {
+							cmd.append((char) buf[i]); 
+						}
+						ctrlModuleServer.addMessage(cmd.toString());
+					}
+					serverSocket.close();
+				} while (!Thread.interrupted());
+			} catch (IOException | InterruptedException ioException) {
+				System.out.println("FATAL: Server with ip " + serverIp + " at port " + serverPort + " not found\n");
+//				ioException.printStackTrace();
+			} finally {
+				try {
+					if(in != null) {
+						in.close();
+					}
+					if(out != null) {
+						out.close();
+					}
+					if(serverSocket != null) {
+						serverSocket.close();
+					}
+				} catch (IOException ioException) {
+//					ioException.printStackTrace();
+				}
 			}
-		}
+		} while(!Thread.interrupted());
 	}
 
 	void sendMessage(String msg) {
@@ -68,7 +74,7 @@ public class CtrlModuleClient implements Runnable {
 		}
 	}
 	
-	public void addMessage(Message message) {
+	public void addMessage(String message) {
 		try {
 			this.messages.put(message);
 		} catch (InterruptedException e) {
@@ -81,9 +87,8 @@ public class CtrlModuleClient implements Runnable {
 		this.ctrlModuleServer = ctrlModuleServer;
 	}
 	
-	//Main de prueba
-//	public static void main(String[] args) {
-//		Executor e = Executors.newFixedThreadPool(1);
-//		e.execute(new CtrlModule());
-//	}
+	public void setServerIp(String serverIp) {
+		this.serverIp = serverIp;
+		System.out.println("Trying to send commands to " + serverIp + " on port " + serverPort);
+	}
 }

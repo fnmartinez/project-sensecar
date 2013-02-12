@@ -3,10 +3,7 @@ package info_module;
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
-import java.net.InetAddress;
 import java.net.SocketException;
-
-import utils.Message;
 
 public class InfoModuleSensorsServer implements Runnable {
 
@@ -37,19 +34,13 @@ public class InfoModuleSensorsServer implements Runnable {
 				buf = new byte[bufferSize];
 				packet = new DatagramPacket(buf, buf.length);
 				socket.receive(packet);
-//				System.out.println("----------------------------------------");
-//				System.out.print("Packet received from: "
-//						+ packet.getAddress() + " | Message: ");
 				byte[] data = packet.getData();
 				for (int i = 0; i < data.length && (data[i] != '\n' && data[i+1] != '\r'); i++) {
-//					System.out.print((char) data[i]);
 					str.append((char) data[i]);
 				}
-//				System.out.println();
 				str.append("\r\n");
 				System.out.println(str.toString());
-//				System.out.println("----------------------------------------");
-				Message message = new Message(packet.getAddress().toString(), InetAddress.getLocalHost().toString(), str.toString());
+				String message = str.toString();
 				infoServer.addMessage(message.toString());
 			} while (!Thread.interrupted());
 		} catch (IOException e) {
@@ -57,10 +48,4 @@ public class InfoModuleSensorsServer implements Runnable {
 			e.printStackTrace();
 		}
 	}
-	
-	// Main de prueba
-//	public static void main(String[] args) {
-//		Executor e = Executors.newFixedThreadPool(1);
-//		e.execute(new InfoModule());
-//	}
 }

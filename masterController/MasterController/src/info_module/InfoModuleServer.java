@@ -14,7 +14,6 @@ public class InfoModuleServer implements Runnable {
 	private ServerSocket socket;
 	private Socket connection = null;
 	private OutputStream out;
-	// private InputStream in;
 	private int infoPort = 8088;
 
 	private BlockingQueue<String> messages;
@@ -45,7 +44,6 @@ public class InfoModuleServer implements Runnable {
 	void sendMessage(String msg) {
 		try {
 			out.write(msg.getBytes());
-			// out.flush();
 		} catch (IOException ioException) {
 			ioException.printStackTrace();
 		}
@@ -63,9 +61,7 @@ public class InfoModuleServer implements Runnable {
 	@Override
 	public void run() {
 		try {
-			// 1. creating a server socket
 			socket = new ServerSocket(infoPort);
-			// 2. Wait for connection
 			System.out.println("Waiting for info connection on port "
 					+ infoPort);
 			do {
@@ -78,11 +74,13 @@ public class InfoModuleServer implements Runnable {
 		} catch (IOException ioException) {
 			ioException.printStackTrace();
 		} finally {
-			// 4: Closing connection
 			try {
-				// in.close();
-				out.close();
-				socket.close();
+				if(out != null) {
+					out.close();
+				}
+				if(socket != null) {
+					socket.close();
+				}
 			} catch (IOException ioException) {
 				ioException.printStackTrace();
 			}
