@@ -70,7 +70,6 @@ public class CtrlModuleServer implements Runnable {
 						if (size > 0) {
 							cmd = newCommand(a,size);
 							if(!cmd.equals(badCommandErrorMessage)) {
-//								ctrlModuleclient.addMessage(cmd);
 								String message = messages.take();
 								sendMessage(message.toString());
 							} else {
