@@ -12,18 +12,6 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 public class SenseModule {
 
-	// public static void main(String[] args) {
-	// MainModule mainModule = new MainModule();
-	//
-	// Boolean[] places = new Boolean[4];
-	// places[0] = true;
-	// places[1] = true;
-	// places[2] = false;
-	// places[3] = true;
-	// Message m1 = new Message("1.1.1.1", places);
-	// mainModule.addMessage(m1);
-	// }
-
 	private ServerSocket socket;
 	private Socket connection = null;
 	private ObjectOutputStream out;
@@ -32,6 +20,7 @@ public class SenseModule {
 
 	private BlockingQueue<String> messages;
 	private ExecutorService executor = Executors.newFixedThreadPool(1);
+	private ExecutorService socketExecutor = Executors.newCachedThreadPool();
 
 	public SenseModule() {
 		this.messages = new LinkedBlockingQueue<String>();
@@ -45,27 +34,9 @@ public class SenseModule {
 						// 2. Wait for connection
 						System.out.println("Waiting for connection");
 						connection = socket.accept();
-						System.out.println("Connection received from "
-								+ connection.getInetAddress().getHostName());
-						// 3. get Input and Output streams
-						out = new ObjectOutputStream(connection.getOutputStream());
-						in = connection.getInputStream();
-						byte[] a = new byte[1000];
-						// 4. The two parts communicate via the input and output
-						// streams
-						sendMessage("Connection successful FROM PC");
-						int size = in.read(a);
-						if (size > 0) {
-							System.out.println("Received size" + size);
-							for (int i = 0; i < size; i++) {
-								System.out.print((char) a[i]);
-							}
-							System.out.println();
-							System.out.flush();
-						}
-						in.close();
+						System.out.println("Connection received from " + connection.getInetAddress().getHostName());
+						newSocket(connection);
 					} while (!Thread.interrupted());
-					socket.close();
 				} catch (IOException ioException) {
 					ioException.printStackTrace();
 				} finally {
@@ -81,11 +52,43 @@ public class SenseModule {
 			}
 		});
 	}
+	
+	private void newSocket(final Socket connection) {
+		socketExecutor.execute(new Runnable() {
+			@Override
+			public void run() {
+				try {
+					out = new ObjectOutputStream(connection.getOutputStream());
+					in = connection.getInputStream();
+					sendMessage("Connection successful FROM PC");
+					do {
+						// 3. get Input and Output streams
+						byte[] a = new byte[1000];
+						// 4. The two parts communicate via the input and output
+						// streams
+						int size = in.read(a);
+						if (size > 0) {
+							System.out.println("Received size" + size);
+							for (int i = 0; i < size; i++) {
+								System.out.print((char) a[i]);
+							}
+							System.out.println();
+							System.out.flush();
+						}
+	//					in.close();
+					} while (!socket.isClosed() && socket.isBound());
+					socket.close();
+				} catch (IOException ioException) {
+					ioException.printStackTrace();
+				}
+			}
+		});
+	}
 
-	void sendMessage(String msg) {
+	private void sendMessage(String msg) {
 		 try {
-		 out.writeObject(msg);
-		 out.flush();
+			 out.writeObject(msg);
+			 out.flush();
 		 } catch (IOException ioException) {
 		 ioException.printStackTrace();
 		 }

@@ -1,8 +1,6 @@
 package ctrl_module;
 
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.concurrent.BlockingQueue;
@@ -14,9 +12,9 @@ import java.util.concurrent.LinkedBlockingQueue;
 public class CtrlModule {
 	private ServerSocket socket;
 	private Socket connection = null;
-	private ObjectOutputStream out;
-	private ObjectInputStream in;
-	private int ctrlPort = 2001;
+//	private ObjectOutputStream out;
+//	private ObjectInputStream in;
+	private int ctrlPort = 2004;
 	
 	private BlockingQueue<String> messages;
 	private ExecutorService executor = Executors.newFixedThreadPool(1);
@@ -35,15 +33,15 @@ public class CtrlModule {
 					System.out.println("Connection received from "
 							+ connection.getInetAddress().getHostName());
 					// 3. get Input and Output streams
-					out = new ObjectOutputStream(connection.getOutputStream());
-					out.flush();
-					in = new ObjectInputStream(connection.getInputStream());
-					sendMessage("Connection successful");
+//					out = new ObjectOutputStream(connection.getOutputStream());
+//					out.flush();
+//					in = new ObjectInputStream(connection.getInputStream());
+//					sendMessage("Connection successful asdfasdfasdfasdf");
 					// 4. The two parts communicate via the input and output streams
 					do {
 						try {
 							String msg = messages.take();
-							sendMessage(msg);
+//							sendMessage(msg);
 						} catch (InterruptedException e1) {
 							// TODO Auto-generated catch block
 							e1.printStackTrace();
@@ -54,8 +52,8 @@ public class CtrlModule {
 				} finally {
 					// 4: Closing connection
 					try {
-						in.close();
-						out.close();
+//						in.close();
+//						out.close();
 						socket.close();
 					} catch (IOException ioException) {
 						ioException.printStackTrace();
@@ -65,14 +63,14 @@ public class CtrlModule {
 		});
 	}
 
-	void sendMessage(String msg) {
-		try {
-			out.writeObject(msg);
-			out.flush();
-		} catch (IOException ioException) {
-			ioException.printStackTrace();
-		}
-	}
+//	void sendMessage(String msg) {
+//		try {
+//			out.writeObject(msg);
+//			out.flush();
+//		} catch (IOException ioException) {
+//			ioException.printStackTrace();
+//		}
+//	}
 	
 	public void addMessage(String message) {
 		try {
