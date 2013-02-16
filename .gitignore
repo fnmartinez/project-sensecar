@@ -28,3 +28,7 @@
 .metadata/
 .metadata
 *.class
+
+# Folders with compiled files
+
+Release/

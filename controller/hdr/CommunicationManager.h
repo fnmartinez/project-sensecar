@@ -36,6 +36,7 @@ public:
 	void CommunicationManager();
 	void begin();
 	void checkComm();
+	void informData();
 	void changeIP(IPAddress ip);
 	void changePort(uint32_t port);
 	void changeServerIP(IPAddress ip);
