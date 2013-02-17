@@ -5,16 +5,19 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.SocketException;
 
-public class InfoModuleSensorsServer implements Runnable {
+public class InfoModuleControllersServer implements Runnable {
 
 	private DatagramSocket socket;
-	private int infoPort = 2002;
+	private int infoPort;
 	private byte[] buf;
 	private DatagramPacket packet;
 	private InfoModuleServer infoServer;
-	private int bufferSize = 256;
+	private int bufferSize;
+	
 
-	public InfoModuleSensorsServer(InfoModuleServer infoModuleServer) {
+	public InfoModuleControllersServer(InfoModuleServer infoModuleServer, int infoPort, int bufferSize) {
+		this.infoPort = infoPort;
+		this.bufferSize = bufferSize;
 		this.infoServer = infoModuleServer;
 		try {
 			socket = new DatagramSocket(infoPort);

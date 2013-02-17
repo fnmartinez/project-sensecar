@@ -16,8 +16,8 @@ public class CtrlModuleServer implements Runnable {
 	private ServerSocket socket;
 	private OutputStream out;
 	private InputStream in;
-	private int ctrlPort = 2001;
-	private int bufferSize = 256;
+	private int ctrlPort;
+	private int bufferSize;
 	private CtrlModuleClient ctrlModuleclient;
 	
 	private BlockingQueue<String> messages;
@@ -26,7 +26,9 @@ public class CtrlModuleServer implements Runnable {
 	
 	private CtrlUtils ctrlUtils;
 	
-	public CtrlModuleServer(CtrlModuleClient ctrlModuleclient) {
+	public CtrlModuleServer(CtrlModuleClient ctrlModuleclient, int ctrlPort, int bufferSize) {
+		this.ctrlPort = ctrlPort;
+		this.bufferSize = bufferSize;
 		this.messages = new LinkedBlockingQueue<String>();
 		this.ctrlModuleclient = ctrlModuleclient;
 		ctrlModuleclient.setCtrlModuleServer(this);
