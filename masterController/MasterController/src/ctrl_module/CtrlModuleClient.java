@@ -34,6 +34,9 @@ public class CtrlModuleClient implements Runnable {
 					byte[] buf = new byte[bufferSize];
 					System.out.println("Trying to send commands to " + serverIp + " on port " + serverPort);
 					String message = messages.take();
+					//TODO: si la ip no es accesible, no intentar conectar
+//					InetAddress inet = InetAddress.getByName("192.168.1.108");
+//					System.out.println("REACHABLE: " + inet.isReachable(5000));
 					serverSocket = new Socket(serverIp, serverPort);
 					out = serverSocket.getOutputStream();
 					in = serverSocket.getInputStream();
@@ -49,8 +52,9 @@ public class CtrlModuleClient implements Runnable {
 					serverSocket.close();
 				} while (!Thread.interrupted());
 			} catch (IOException | InterruptedException ioException) {
-				System.out.println("FATAL: Server with ip " + serverIp + " at port " + serverPort + " not found\n");
-//				ioException.printStackTrace();
+				System.out.println("ERROR: Device with ip " + serverIp + " at port " + serverPort + " not found\n");
+				ctrlModuleServer.addMessage(" Device with ip " + serverIp + " at port " + serverPort + " not found\n");
+				ioException.printStackTrace();
 			} finally {
 				try {
 					if(in != null) {
@@ -63,7 +67,7 @@ public class CtrlModuleClient implements Runnable {
 						serverSocket.close();
 					}
 				} catch (IOException ioException) {
-//					ioException.printStackTrace();
+					ioException.printStackTrace();
 				}
 			}
 		} while(!Thread.interrupted());

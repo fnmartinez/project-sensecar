@@ -42,11 +42,17 @@ public class InfoModuleControllersServer implements Runnable {
 				System.out.println("quantity: " + quantity);
 				System.out.println("byte[0] = " + data[0]);
 				System.out.println("byte[1] = " + data[1]);
-				System.out.println("byte[2] = " + data[2]);
-				System.out.println("byte[3] = " + data[3]);
+//				System.out.println("byte[2] = " + data[2]);
+//				System.out.println("byte[3] = " + data[3]);
+				str.append("Data from:");
+				str.append(packet.getAddress());
+				str.append("\n");
 				for (int i = 0; i<quantity && i < data.length && data[i] != '\n' && data[i+1] != '\r'; i++) {
-					str.append("Sensor " + (i+1) + " state is: ");
-					str.append((int) data[i]);
+					str.append("Sensor ");
+					str.append(i+1);
+					str.append(" state is: ");
+					str.append((int) data[i+1]);
+					str.append("\n");
 				}
 				str.append("\r\n");
 				System.out.println(str.toString());
