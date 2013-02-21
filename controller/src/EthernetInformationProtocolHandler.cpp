@@ -10,12 +10,16 @@ EthernetInformationProtocolHandler::EthernetInformationProtocolHandler(IPAddress
 	this->serverIP = serverIP;
 	this->serverPort = serverPort;
 	this->udpPort = udpPort;
-	this->client.begin(this->udpPort);
-	Serial.println("UDP InformationProtocolHandler set.");
+	Serial.println("EthernetInformationProtocolHandler over UDP set.");
 }
 
-EthernetInformationProtocolHandler::sendPacket() {
-	this->client.beginPacket(this->serverIP, this-serverPort);
+void EthernetInformationProtocolHandler::begin() {
+	this->client.begin(this->udpPort);
+	Serial.println("EthernetInformationProtocolHandler over UDP running.");
+}
+
+void EthernetInformationProtocolHandler::sendPacket() {
+	this->client.beginPacket(this->serverIP, this->serverPort);
 	this->client.write(this->getRawpacket(), this->getSensorsQty());
 	this->client.endPacket();
 }

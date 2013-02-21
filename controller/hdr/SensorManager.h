@@ -8,21 +8,24 @@
 #ifndef SENSORMANAGER_H_
 #define SENSORMANAGER_H_
 
+#include <commons.h>
 #include <Sensor.h>
-#define MAX_SENSOR_ARRAY 256
 
 
 class SensorManager {
 private:
-	Sensor sensors[MAX_SENSOR_ARRAY];
-	byte sensorsStatus[MAX_SENSOR_ARRAY];
+	Sensor ** sensors;
+	byte sensorsStatus[MAX_SENSORS];
+	int sensorsQty;
 	bool sensorsChange;
 public:
-	void SensorManager(Sensor sensorArray[MAX_SENSOR_ARRAY]);
+	SensorManager(Sensor ** sensorArray, int sensorsQty);
 	bool sensorsChanged();
 	void checkSensors();
 	byte * getSensorsStatus();
 	void reset();
+
+	friend class InformationProtocolTranslator;
 };
 
 

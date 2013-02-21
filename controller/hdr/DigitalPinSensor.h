@@ -16,7 +16,7 @@ private:
 	byte pin;
 	byte onValue;
 public:
-	void DigitalPinSensor(byte pin, byte onValue);
+	DigitalPinSensor(byte pin, byte onValue);
 	virtual bool isOn();
 };
 

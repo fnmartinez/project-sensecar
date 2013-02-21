@@ -11,7 +11,7 @@
 
 class Sensor {
 public:
-	virtual byte isOn() =0;
+	virtual bool isOn() =0;
 	virtual ~Sensor();
 };
 

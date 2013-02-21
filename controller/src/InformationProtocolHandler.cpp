@@ -13,27 +13,18 @@ InformationProtocolHandler::InformationProtocolHandler() {
 		this->iPacket.sensors_status[i] = FREE;
 	}
 
-	this->rawPacket = &this->iPacket;
+	this->rawPacket = (byte*)&(this->iPacket);
+	Serial.println("InformationProtocolHandler Set");
 }
 
-InformationProtocolHandler::preparePacket(int sensorsQty, byte * sensorsStatus) {
-	if(sensorsQty > MAX_SENSORS){
-		Serial.println("Sensors quantity exceeds the maximum sensor quantity allowed. No packet is prepared.");
-		return;
-	}
-
-	this->iPacket.sensors_qty = sensorsQty;
-	memcpy(this->iPacket.sensors_status, sensorsStatus, this->iPacket.sensors_qty);
-}
-
-InformationProtocolHandler::getRawpacket() {
+byte * InformationProtocolHandler::getRawpacket() {
 	return this->rawPacket;
 }
 
-InformationProtocolHandler::getSensorsQty(){
+byte InformationProtocolHandler::getSensorsQty(){
 	return this->iPacket.sensors_qty;
 }
 
-InformationProtocolHandler::getSensorsStatus() {
+byte * InformationProtocolHandler::getSensorsStatus() {
 	return this->iPacket.sensors_status;
 }

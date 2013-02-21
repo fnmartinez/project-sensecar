@@ -9,8 +9,8 @@
 #define INFORMATIONPROTOCOLHANDLER_H_
 
 #include <Arduino.h>
+#include <commons.h>
 
-#define MAX_SENSORS 256
 #define FREE 0
 #define OCCUPIED 1
 #define OFF 2
@@ -26,14 +26,16 @@ private:
 	InfoPacket iPacket;
 	byte* rawPacket;
 public:
-	void InformationProtocolHandler();
-	//TODO: put getters definitions in the .cpp
-	byte getSensorsQty() { return this->iPacket.sensors_qty;}
-	byte * getSensorsStatus() { return this->iPacket.sensors_status;}
+	InformationProtocolHandler();
+	byte getSensorsQty();
+	byte * getSensorsStatus();
 	byte * getRawpacket();
-	void preparePacket(int sensorsQty, byte * sensorsStatus);
+	virtual void begin()=0;
 	virtual void sendPacket() =0;
 	virtual ~InformationProtocolHandler() {};
+
+	friend class InformationProtocolTranslator;
+	friend class CommunicationManager;
 };
 
 #endif /* INFORMATIONPROTOCOLHANDLER_H_ */

@@ -4,25 +4,28 @@
  *  Created on: 16/02/2013
  *      Author: facundo
  */
+#include <commons.h>
+#include <SensorManager.h>
 
-#include  <SensorManager.h>
-
-SensorManager::SensorManager(Sensor sensorArray[MAX_SENSOR_ARRAY]) {
+SensorManager::SensorManager(Sensor * sensorArray, int sensorsQty) {
 	this->sensors = sensorArray;
+	this->sensorsQty = sensorsQty;
 	this->checkSensors();
 }
 
-SensorManager::sensorsChanged() {
+bool SensorManager::sensorsChanged() {
 	return this->sensorsChange;
 }
 
-SensorManager::checkSensors() {
+void SensorManager::checkSensors() {
 
 
-	for(int i = 0; i < MAX_SENSOR_ARRAY; i++) {
-		byte status = this->sensors[i].getStatus();
+	for(int i = 0; i < MAX_SENSORS; i++) {
+		bool status = this->sensors[i]->isOn();
 
-		if(status != this->sensorsStatus[i]) {
+		if(this->sensorsStatus[i] != OFF && (
+				(status == true && this->sensorsStatus[i] == VACANT) ||
+				(status == false && this->sensorsStatus[i] == OCCUPYED))) {
 			this->sensorsChange = true;
 		}
 
@@ -30,10 +33,10 @@ SensorManager::checkSensors() {
 	}
 }
 
-SensorManager::getSensorsStatus() {
+byte * SensorManager::getSensorsStatus() {
 	return this->sensorsStatus;
 }
 
-SensorManager::reset() {
+void SensorManager::reset() {
 	this->sensorsChange = false;
 }

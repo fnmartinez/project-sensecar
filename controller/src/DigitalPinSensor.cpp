@@ -4,14 +4,15 @@
  *  Created on: 16/02/2013
  *      Author: facundo
  */
-
+#include <Arduino.h>
 #include <DigitalPinSensor.h>
 
 DigitalPinSensor::DigitalPinSensor(byte pin, byte onValue) {
 	this->pin = pin;
 	this->onValue = onValue;
+	pinMode(this->pin, INPUT);
 }
 
-DigitalPinSensor::isOn() {
-	return this->onVal == digitalRead(this->pin);
+bool DigitalPinSensor::isOn() {
+	return this->onValue == digitalRead(this->pin);
 }

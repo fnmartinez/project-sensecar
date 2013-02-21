@@ -9,6 +9,7 @@
 #define ETHERNETINFORMATIONPROTOCOLHANDLER_H_
 
 #include <Arduino.h>
+#include <InformationProtocolHandler.h>
 #include <Ethernet.h>
 #include <EthernetServer.h>
 
@@ -19,7 +20,8 @@ private:
 	uint32_t udpPort;
 	EthernetUDP client;
 public:
-	void EthernetInformationProtocolHandler(IPAddress serverIP, uint32_t serverPort, uint32_t udpPort);
+	EthernetInformationProtocolHandler(IPAddress serverIP, uint32_t serverPort, uint32_t udpPort);
+	virtual void begin();
 	virtual void sendPacket();
 };
 
