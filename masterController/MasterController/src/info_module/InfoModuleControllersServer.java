@@ -5,16 +5,19 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.SocketException;
 
-public class InfoModuleSensorsServer implements Runnable {
+public class InfoModuleControllersServer implements Runnable {
 
 	private DatagramSocket socket;
-	private int infoPort = 2002;
+	private int infoPort;
 	private byte[] buf;
 	private DatagramPacket packet;
 	private InfoModuleServer infoServer;
-	private int bufferSize = 256;
+	private int bufferSize;
+	
 
-	public InfoModuleSensorsServer(InfoModuleServer infoModuleServer) {
+	public InfoModuleControllersServer(InfoModuleServer infoModuleServer, int infoPort, int bufferSize) {
+		this.infoPort = infoPort;
+		this.bufferSize = bufferSize;
 		this.infoServer = infoModuleServer;
 		try {
 			socket = new DatagramSocket(infoPort);
@@ -35,8 +38,15 @@ public class InfoModuleSensorsServer implements Runnable {
 				packet = new DatagramPacket(buf, buf.length);
 				socket.receive(packet);
 				byte[] data = packet.getData();
-				for (int i = 0; i < data.length && (data[i] != '\n' && data[i+1] != '\r'); i++) {
-					str.append((char) data[i]);
+				int quantity = (int)data[0];
+				System.out.println("quantity: " + quantity);
+				System.out.println("byte[0] = " + data[0]);
+				System.out.println("byte[1] = " + data[1]);
+				System.out.println("byte[2] = " + data[2]);
+				System.out.println("byte[3] = " + data[3]);
+				for (int i = 0; i<quantity && i < data.length && data[i] != '\n' && data[i+1] != '\r'; i++) {
+					str.append("Sensor " + (i+1) + " state is: ");
+					str.append((int) data[i]);
 				}
 				str.append("\r\n");
 				System.out.println(str.toString());

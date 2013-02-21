@@ -11,15 +11,19 @@ public class CtrlModuleClient implements Runnable {
 	private Socket serverSocket;
 	private OutputStream out;
 	private InputStream in;
-	private int serverPort = 8888;
-	private String serverIp = "127.0.0.1";
+	private int serverPort;
+	private String serverIp;
 	private CtrlModuleServer ctrlModuleServer; // Seteado desde CtrlModuleServer
-	private int bufferSize = 256;
+	private int bufferSize;
 	
 	private BlockingQueue<String> messages;
 	
-	public CtrlModuleClient() {
+	
+	public CtrlModuleClient(String serverIp, int serverPort, int bufferSize) {
 		this.messages = new LinkedBlockingQueue<String>();
+		this.serverIp = serverIp;
+		this.serverPort = serverPort;
+		this.bufferSize = bufferSize;
 	}
 
 	@Override
@@ -90,5 +94,9 @@ public class CtrlModuleClient implements Runnable {
 	public void setServerIp(String serverIp) {
 		this.serverIp = serverIp;
 		System.out.println("Trying to send commands to " + serverIp + " on port " + serverPort);
+	}
+	
+	public String getServerIp() {
+		return this.serverIp;
 	}
 }

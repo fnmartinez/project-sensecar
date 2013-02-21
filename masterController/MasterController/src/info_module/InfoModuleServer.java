@@ -14,13 +14,14 @@ public class InfoModuleServer implements Runnable {
 	private ServerSocket socket;
 	private Socket connection = null;
 	private OutputStream out;
-	private int infoPort = 8088;
+	private int infoPort;
 
 	private BlockingQueue<String> messages;
 	private ExecutorService socketExecutor = Executors.newCachedThreadPool();
-
-	public InfoModuleServer() {
+	
+	public InfoModuleServer(int infoPort) {
 		this.messages = new LinkedBlockingQueue<String>();
+		this.infoPort = infoPort;
 	}
 
 	private void newSocket(final Socket connection) {
