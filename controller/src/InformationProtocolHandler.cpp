@@ -13,12 +13,18 @@ InformationProtocolHandler::InformationProtocolHandler() {
 		this->iPacket.sensors_status[i] = FREE;
 	}
 
-	this->rawPacket = (char*)&(this->iPacket);
+//	this->rawPacket = (char*)&(this->iPacket);
 	Serial.println("InformationProtocolHandler Set");
 }
 
-char * InformationProtocolHandler::getRawpacket() {
-	return (char*)&(this->iPacket);
+byte * InformationProtocolHandler::getRawpacket() {
+	this->rawPacket[0] = this->iPacket.sensors_qty + 48;
+	for(int i = 0; i < this->iPacket.sensors_qty; i++) {
+		this->rawPacket[i+1] = this->iPacket.sensors_status[i] + 48;
+	}
+	this->rawPacket[this->iPacket.sensors_qty + 2] = '\n';
+	this->rawPacket[this->iPacket.sensors_qty + 3] = '\0';
+	return this->rawPacket;
 }
 
 char InformationProtocolHandler::getSensorsQty(){

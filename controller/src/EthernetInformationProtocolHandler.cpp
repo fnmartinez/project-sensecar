@@ -24,12 +24,16 @@ void EthernetInformationProtocolHandler::sendPacket() {
 //	Serial.print(" at port: ");
 //	Serial.print(this->serverPort);
 //
-//	Serial.print("IPACKET STATUS: ");
-//	Serial.print(this->getSensorsStatus()[0]);
-//	Serial.print(" SENSORS QUANTITY: ");
-//	Serial.print(this->getSensorsQty());
+	Serial.print(" SENSORS QUANTITY: ");
+	Serial.print(this->getRawpacket()[0], DEC);
+	Serial.print("\t RAWPACKET STATUS[1]: ");
+	Serial.print(this->getRawpacket()[1], DEC);
+	Serial.print("\t RAWPACKET STATUS[2]: ");
+	Serial.print(this->getRawpacket()[2], DEC);
+	Serial.print("\t RAWPACKET STATUS[3]: ");
+	Serial.println(this->getRawpacket()[3], DEC);
 
 	this->client.beginPacket(this->serverIP, this->serverPort);
-	this->client.write(this->getRawpacket());
+	this->client.write((char*)this->getRawpacket());
 	this->client.endPacket();
 }
