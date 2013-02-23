@@ -33,7 +33,7 @@ private:
 	CommandProtocolHandler * cmdPHandler;
 	InformationProtocolHandler * infoPHandler;
 public:
-	CommunicationManager(InformationProtocolHandler &infoPHandler);
+	CommunicationManager(InformationProtocolHandler &infoPHandler, CommandProtocolHandler &cmdPHandler);
 	//void begin();
 	void checkIncommingComm();
 	void informData(SensorManager * sm);

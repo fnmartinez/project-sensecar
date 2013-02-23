@@ -8,10 +8,12 @@
 #include <CommunicationManager.h>
 
 
-CommunicationManager::CommunicationManager(InformationProtocolHandler &infoPHandler) {
+CommunicationManager::CommunicationManager(InformationProtocolHandler &infoPHandler, CommandProtocolHandler &cmdPHandler) {
 	this->infoPHandler = &infoPHandler;
+	this->cmdPHandler = &cmdPHandler;
 	Ethernet.begin(default_MAC, default_IP);
 	this->infoPHandler->begin();
+	this->cmdPHandler->begin();
 	Serial.println("Communication Module up and running.");
 }
 

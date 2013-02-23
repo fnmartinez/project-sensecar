@@ -107,6 +107,8 @@ void loop() {
 #include <CommunicationManager.h>
 #include <InformationProtocolHandler.h>
 #include <EthernetInformationProtocolHandler.h>
+#include <CommandProtocolHandler.h>
+#include <EthernetCommandProtocolHandler.h>
 
 #include <SensorManager.h>
 #include <Sensor.h>
@@ -115,6 +117,7 @@ void loop() {
 #define DEFAULT_SERVER_IP 192,168,1,10
 #define DEFAULT_SERVER_PORT 2002
 #define DEFAULT_UDP_PORT 2002
+#define DEFAULT_LISTENING_PORT 8888
 #define SENSORS_QTY 2
 
 SensorManager * sm;
@@ -170,7 +173,8 @@ int main(void) {
 
 	Serial.println("Initializing EthernetInformationProtocolHandler:");
 	EthernetInformationProtocolHandler iph(IPAddress(DEFAULT_SERVER_IP), DEFAULT_SERVER_PORT, DEFAULT_UDP_PORT);
-	cm = new CommunicationManager(iph);
+	EthernetCommandProtocolHandler eph(DEFAULT_LISTENING_PORT);
+	cm = new CommunicationManager(iph, eph);
 
 	for(int i = 0; i < SENSORS_QTY; i++) {
 		pinMode(dSensors[i].getPin(), INPUT);
