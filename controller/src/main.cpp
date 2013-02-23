@@ -115,7 +115,7 @@ void loop() {
 #define DEFAULT_SERVER_IP 192,168,1,10
 #define DEFAULT_SERVER_PORT 2002
 #define DEFAULT_UDP_PORT 2002
-#define SENSORS_QTY 2
+#define SENSORS_QTY 3
 
 SensorManager * sm;
 CommunicationManager * cm;
@@ -133,6 +133,7 @@ IPAddress CommunicationManager::default_gateway(192,168,1,10);
 IPAddress CommunicationManager::default_server_IP = CommunicationManager::default_gateway;
 
 DigitalPinSensor dSensors[SENSORS_QTY] = {
+		DigitalPinSensor(5, HIGH),
 		DigitalPinSensor(6, HIGH),
 		DigitalPinSensor(7, HIGH)
 };
