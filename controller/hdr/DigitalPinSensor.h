@@ -13,11 +13,12 @@
 
 class DigitalPinSensor : public Sensor {
 private:
-	byte pin;
+	int pin;
 	byte onValue;
 public:
-	DigitalPinSensor(byte pin, byte onValue);
+	DigitalPinSensor(int pin, byte onValue);
 	virtual bool isOn();
+	virtual int getPin();
 };
 
 #endif /* DIGITALPINSENSOR_CPP_ */

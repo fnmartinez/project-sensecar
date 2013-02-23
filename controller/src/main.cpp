@@ -112,14 +112,13 @@ void loop() {
 #include <Sensor.h>
 #include <DigitalPinSensor.h>
 
-#define DEFAULT_SERVER_IP 192,168,1,1
+#define DEFAULT_SERVER_IP 192,168,1,10
 #define DEFAULT_SERVER_PORT 2002
 #define DEFAULT_UDP_PORT 2002
-#define SENSORS_QTY 1
+#define SENSORS_QTY 2
 
-CommunicationManager * cm;
 SensorManager * sm;
-
+CommunicationManager * cm;
 
 //int pins[SENSORS_QTY] = {
 //		7
@@ -128,30 +127,19 @@ SensorManager * sm;
 //Sensor * s[SENSORS_QTY];
 
 byte CommunicationManager::default_MAC[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
-IPAddress CommunicationManager::default_IP(192,168,1,177);
+IPAddress CommunicationManager::default_IP(192,168,1,20);
 IPAddress CommunicationManager::default_mask(255,255,255,0);
-IPAddress CommunicationManager::default_gateway(192,168,1,1);
+IPAddress CommunicationManager::default_gateway(192,168,1,10);
 IPAddress CommunicationManager::default_server_IP = CommunicationManager::default_gateway;
 
 DigitalPinSensor dSensors[SENSORS_QTY] = {
+		DigitalPinSensor(6, HIGH),
 		DigitalPinSensor(7, HIGH)
 };
+
 void setup() {
 	Serial.begin(9600);
-
-	for(int i = 0; i < SENSORS_QTY; i++) {
-//		s[i] = &DigitalPinSensor(pins[i], HIGH);
-	}
-	Serial.println("2Puto!");
-
-	sm = &SensorManager(dSensors, SENSORS_QTY);
-
-	Serial.println("3Puto!");
-	EthernetInformationProtocolHandler iph(IPAddress(DEFAULT_SERVER_IP), DEFAULT_SERVER_PORT, DEFAULT_UDP_PORT);
-
-	cm = &CommunicationManager(iph);
-
-	Serial.println("Arduino set");
+	Serial.println("Setup finished");
 }
 
 void loop() {
@@ -162,6 +150,7 @@ void loop() {
 
 	if (sm->sensorsChanged()) {
 		cm->informData(sm);
+		sm->setSensorsChanged(false);
 	}
 
 }
@@ -170,6 +159,30 @@ int main(void) {
 
 	init();
 	setup();
+
+	Serial.println("Esto estaba en el setup, pero si no va aca se resetea el arduino");
+	//	for(int i = 0; i < SENSORS_QTY; i++) {
+	//		s[i] = &DigitalPinSensor(pins[i], HIGH);
+	//	}
+	Serial.println("Initializing sensor manager:");
+
+	sm = new SensorManager(dSensors, SENSORS_QTY);
+
+	Serial.println("Initializing EthernetInformationProtocolHandler:");
+	EthernetInformationProtocolHandler iph(IPAddress(DEFAULT_SERVER_IP), DEFAULT_SERVER_PORT, DEFAULT_UDP_PORT);
+	cm = new CommunicationManager(iph);
+
+	for(int i = 0; i < SENSORS_QTY; i++) {
+		pinMode(dSensors[i].getPin(), INPUT);
+	}
+
+	Serial.println("Sensor pins: ");
+	Serial.println(dSensors[0].getPin());
+	Serial.println(dSensors[1].getPin());
+
+	Serial.println("Arduino set");
+
+	Serial.println("Entering loop...");
 
 	do {
 		loop();

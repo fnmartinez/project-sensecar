@@ -19,7 +19,17 @@ void EthernetInformationProtocolHandler::begin() {
 }
 
 void EthernetInformationProtocolHandler::sendPacket() {
+//	Serial.print("SENDING UDP PACKET to: ");
+//	Serial.print(this->serverIP);
+//	Serial.print(" at port: ");
+//	Serial.print(this->serverPort);
+//
+//	Serial.print("IPACKET STATUS: ");
+//	Serial.print(this->getSensorsStatus()[0]);
+//	Serial.print(" SENSORS QUANTITY: ");
+//	Serial.print(this->getSensorsQty());
+
 	this->client.beginPacket(this->serverIP, this->serverPort);
-	this->client.write(this->getRawpacket(), this->getSensorsQty());
+	this->client.write(this->getRawpacket());
 	this->client.endPacket();
 }

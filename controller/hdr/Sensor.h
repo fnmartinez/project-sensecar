@@ -11,7 +11,8 @@
 
 class Sensor {
 public:
-	virtual bool isOn() =0;
+	virtual bool isOn() = 0;
+	virtual int getPin() = 0;
 	virtual ~Sensor();
 };
 

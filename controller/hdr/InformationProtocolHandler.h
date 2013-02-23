@@ -17,19 +17,19 @@
 
 typedef struct information_packet InfoPacket;
 struct information_packet {
-	byte sensors_qty;
-	byte sensors_status[MAX_SENSORS];
+	char sensors_qty;
+	char sensors_status[MAX_SENSORS];
 };
 
 class InformationProtocolHandler {
 private:
 	InfoPacket iPacket;
-	byte* rawPacket;
+	char* rawPacket;
 public:
 	InformationProtocolHandler();
-	byte getSensorsQty();
-	byte * getSensorsStatus();
-	byte * getRawpacket();
+	char getSensorsQty();
+	char * getSensorsStatus();
+	char * getRawpacket();
 	virtual void begin()=0;
 	virtual void sendPacket() =0;
 	virtual ~InformationProtocolHandler() {};

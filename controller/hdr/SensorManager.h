@@ -10,17 +10,18 @@
 
 #include <commons.h>
 #include <Sensor.h>
-
+#include <DigitalPinSensor.h>
 
 class SensorManager {
 private:
-	Sensor ** sensors;
+	DigitalPinSensor * sensors;
 	byte sensorsStatus[MAX_SENSORS];
 	int sensorsQty;
 	bool sensorsChange;
 public:
-	SensorManager(Sensor ** sensorArray, int sensorsQty);
+	SensorManager(DigitalPinSensor * sensorArray, int sensorsQty);
 	bool sensorsChanged();
+	void setSensorsChanged(bool changed);
 	void checkSensors();
 	byte * getSensorsStatus();
 	void reset();
