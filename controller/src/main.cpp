@@ -104,6 +104,7 @@ void loop() {
 
 }*/
 
+
 #include <CommunicationManager.h>
 #include <InformationProtocolHandler.h>
 #include <EthernetInformationProtocolHandler.h>
@@ -173,8 +174,10 @@ int main(void) {
 
 	Serial.println("Initializing EthernetInformationProtocolHandler:");
 	EthernetInformationProtocolHandler iph(IPAddress(DEFAULT_SERVER_IP), DEFAULT_SERVER_PORT, DEFAULT_UDP_PORT);
-	EthernetCommandProtocolHandler eph(DEFAULT_LISTENING_PORT);
-	cm = new CommunicationManager(iph, eph);
+	EthernetCommandProtocolHandler cph(DEFAULT_LISTENING_PORT);
+	Serial.print("infoPHandler:");
+	Serial.println((int)&iph, HEX);
+	cm = new CommunicationManager(&iph, &cph);
 
 	for(int i = 0; i < SENSORS_QTY; i++) {
 		pinMode(dSensors[i].getPin(), INPUT);
@@ -193,3 +196,4 @@ int main(void) {
 	} while(true);
 
 }
+

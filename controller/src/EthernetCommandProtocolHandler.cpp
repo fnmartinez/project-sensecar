@@ -10,6 +10,12 @@
 EthernetCommandProtocolHandler::EthernetCommandProtocolHandler(int port) {
 	this->port = port;
 	this->server = &EthernetServer(this->port);
+	Serial.println("Ethernet Command server over TCP set");
+}
+
+void EthernetCommandProtocolHandler::begin() {
+	this->server->begin();
+	Serial.println("Ethernet Command server over TCP running");
 }
 
 void EthernetCommandProtocolHandler::respond(EthernetClient c, char * response, char * msg, char * terminator) {
@@ -85,9 +91,6 @@ void EthernetCommandProtocolHandler::checkForClients() {
 
 }
 
-void EthernetCommandProtocolHandler::begin() {
-	this->server->begin();
-}
 
 EthernetCommandProtocolHandler::~EthernetCommandProtocolHandler() {
 

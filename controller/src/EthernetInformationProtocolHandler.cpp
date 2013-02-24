@@ -14,8 +14,8 @@ EthernetInformationProtocolHandler::EthernetInformationProtocolHandler(IPAddress
 }
 
 void EthernetInformationProtocolHandler::begin() {
-	this->client.begin(this->udpPort);
 	Serial.println("EthernetInformationProtocolHandler over UDP running.");
+	this->client.begin(this->udpPort);
 }
 
 void EthernetInformationProtocolHandler::sendPacket() {
