@@ -6,6 +6,7 @@
  */
 #include <commons.h>
 #include <SensorManager.h>
+#include <Ethernet.h>
 
 SensorManager::SensorManager(DigitalPinSensor * sensorArray, int sensorsQty) {
 	this->sensors = sensorArray;
@@ -58,18 +59,6 @@ void SensorManager::checkSensors() {
 
 	}
 
-
-//	for(int i = 0; i < MAX_SENSORS; i++) {
-//		bool status = this->sensors[i].isOn();
-//
-//		if(this->sensorsStatus[i] != OFF && (
-//				(status == true && this->sensorsStatus[i] == VACANT) ||
-//				(status == false && this->sensorsStatus[i] == OCCUPYED))) {
-//			this->sensorsChange = true;
-//		}
-//
-//		this->sensorsStatus[i] = status;
-//	}
 }
 
 byte * SensorManager::getSensorsStatus() {

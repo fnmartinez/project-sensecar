@@ -38,11 +38,11 @@ public class InfoModuleControllersServer implements Runnable {
 				packet = new DatagramPacket(buf, buf.length);
 				socket.receive(packet);
 				byte[] data = packet.getData();
-				int quantity = (int)data[0];
-				System.out.println("quantity: " + quantity);
-				System.out.println("byte[0] = " + data[0]);
-				System.out.println("byte[1] = " + data[1]);
-//				System.out.println("byte[2] = " + data[2]);
+				int quantity = ((char)data[0]) - 48;
+				System.out.println("quantity: " + (char)data[0]);
+				System.out.println("byte[0] = " + (char)data[0]);
+				System.out.println("byte[1] = " + (char)data[1]);
+				System.out.println("byte[2] = " + (char)data[2]);
 //				System.out.println("byte[3] = " + data[3]);
 				str.append("Data from:");
 				str.append(packet.getAddress());
@@ -51,7 +51,7 @@ public class InfoModuleControllersServer implements Runnable {
 					str.append("Sensor ");
 					str.append(i+1);
 					str.append(" state is: ");
-					str.append((int) data[i+1]);
+					str.append((char)data[i+1]);
 					str.append("\n");
 				}
 				str.append("\r\n");

@@ -14,9 +14,9 @@ void InformationProtocolTranslator::translate(InformationProtocolHandler &iph, S
 	for (int i = 0; i < (sm->sensorsQty); i++) {
 		iph.iPacket.sensors_status[i] = sm->sensorsStatus[i];
 		Serial.print("SENSOR STATUS: ");
-		Serial.print(sm->sensorsStatus[i]);
+		Serial.print(sm->sensorsStatus[i], DEC);
 		Serial.print(" IPACKET STATUS: ");
-		Serial.print(iph.iPacket.sensors_status[i]);
+		Serial.print(iph.iPacket.sensors_status[i], DEC);
 		Serial.println();
 	}
 

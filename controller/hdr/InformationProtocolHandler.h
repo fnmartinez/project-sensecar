@@ -24,12 +24,12 @@ struct information_packet {
 class InformationProtocolHandler {
 private:
 	InfoPacket iPacket;
-	char* rawPacket;
+	byte rawPacket[MAX_SENSORS + 2];
 public:
 	InformationProtocolHandler();
 	char getSensorsQty();
 	char * getSensorsStatus();
-	char * getRawpacket();
+	byte * getRawpacket();
 	virtual void begin()=0;
 	virtual void sendPacket() =0;
 	virtual ~InformationProtocolHandler() {};

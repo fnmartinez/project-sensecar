@@ -137,6 +137,7 @@ IPAddress CommunicationManager::default_gateway(192,168,1,10);
 IPAddress CommunicationManager::default_server_IP = CommunicationManager::default_gateway;
 
 DigitalPinSensor dSensors[SENSORS_QTY] = {
+		DigitalPinSensor(5, HIGH),
 		DigitalPinSensor(6, HIGH),
 		DigitalPinSensor(7, HIGH)
 };
