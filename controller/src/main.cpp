@@ -107,9 +107,7 @@ void loop() {
 
 #include <CommunicationManager.h>
 #include <InformationProtocolHandler.h>
-#include <EthernetInformationProtocolHandler.h>
 #include <CommandProtocolHandler.h>
-#include <EthernetCommandProtocolHandler.h>
 
 #include <SensorManager.h>
 #include <Sensor.h>
@@ -119,10 +117,23 @@ void loop() {
 #define DEFAULT_SERVER_PORT 2002
 #define DEFAULT_UDP_PORT 2002
 #define DEFAULT_LISTENING_PORT 8888
-#define SENSORS_QTY 2
+#define SENSORS_QTY 3
 
-SensorManager * sm;
-CommunicationManager * cm;
+byte CommunicationManager::default_MAC[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
+IPAddress CommunicationManager::default_IP(192,168,1,20);
+IPAddress CommunicationManager::default_mask(255,255,255,0);
+IPAddress CommunicationManager::default_gateway(192,168,1,10);
+IPAddress CommunicationManager::default_server_IP = CommunicationManager::default_gateway;
+DigitalPinSensor dSensors[SENSORS_QTY] = {
+		DigitalPinSensor(5, HIGH),
+		DigitalPinSensor(6, HIGH),
+		DigitalPinSensor(7, HIGH)
+};
+
+InformationProtocolHandler iph(IPAddress(DEFAULT_SERVER_IP), DEFAULT_SERVER_PORT, DEFAULT_UDP_PORT);
+CommandProtocolHandler cph(DEFAULT_LISTENING_PORT);
+SensorManager sm(dSensors, SENSORS_QTY);
+CommunicationManager cm(iph, cph);
 
 //int pins[SENSORS_QTY] = {
 //		7
@@ -130,32 +141,21 @@ CommunicationManager * cm;
 //
 //Sensor * s[SENSORS_QTY];
 
-byte CommunicationManager::default_MAC[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
-IPAddress CommunicationManager::default_IP(192,168,1,20);
-IPAddress CommunicationManager::default_mask(255,255,255,0);
-IPAddress CommunicationManager::default_gateway(192,168,1,10);
-IPAddress CommunicationManager::default_server_IP = CommunicationManager::default_gateway;
-
-DigitalPinSensor dSensors[SENSORS_QTY] = {
-		DigitalPinSensor(5, HIGH),
-		DigitalPinSensor(6, HIGH),
-		DigitalPinSensor(7, HIGH)
-};
-
 void setup() {
 	Serial.begin(9600);
 	Serial.println("Setup finished");
+	cm.begin();
 }
 
 void loop() {
 
-	cm->checkIncommingComm();
+	cm.checkIncommingComm();
 
-	sm->checkSensors();
+	sm.checkSensors();
 
-	if (sm->sensorsChanged()) {
-		cm->informData(sm);
-		sm->setSensorsChanged(false);
+	if (sm.sensorsChanged()) {
+		cm.informData(sm);
+		sm.setSensorsChanged(false);
 	}
 
 }
@@ -171,14 +171,10 @@ int main(void) {
 	//	}
 	Serial.println("Initializing sensor manager:");
 
-	sm = new SensorManager(dSensors, SENSORS_QTY);
-
 	Serial.println("Initializing EthernetInformationProtocolHandler:");
-	EthernetInformationProtocolHandler iph(IPAddress(DEFAULT_SERVER_IP), DEFAULT_SERVER_PORT, DEFAULT_UDP_PORT);
-	EthernetCommandProtocolHandler cph(DEFAULT_LISTENING_PORT);
-	Serial.print("infoPHandler:");
-	Serial.println((int)&iph, HEX);
-	cm = new CommunicationManager(&iph, &cph);
+
+//	Ethernet.begin(CommunicationManager::default_MAC, CommunicationManager::default_IP);
+//	iph.begin();
 
 	for(int i = 0; i < SENSORS_QTY; i++) {
 		pinMode(dSensors[i].getPin(), INPUT);

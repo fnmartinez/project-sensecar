@@ -7,7 +7,7 @@
 
 #include <InformationProtocolHandler.h>
 
-InformationProtocolHandler::InformationProtocolHandler() {
+InformationProtocolHandler::InformationProtocolHandler(IPAddress serverIP, uint32_t serverPort, uint32_t udpPort) {
 	this->iPacket.sensors_qty = MAX_SENSORS;
 	for(int i = 0; i < MAX_SENSORS; i++) {
 		this->iPacket.sensors_status[i] = FREE;
@@ -15,6 +15,10 @@ InformationProtocolHandler::InformationProtocolHandler() {
 
 //	this->rawPacket = (char*)&(this->iPacket);
 	Serial.println("InformationProtocolHandler Set");
+	this->serverIP = serverIP;
+	this->serverPort = serverPort;
+	this->udpPort = udpPort;
+	Serial.println("EthernetInformationProtocolHandler over UDP set.");
 }
 
 byte * InformationProtocolHandler::getRawpacket() {
@@ -33,4 +37,29 @@ char InformationProtocolHandler::getSensorsQty(){
 
 char * InformationProtocolHandler::getSensorsStatus() {
 	return this->iPacket.sensors_status;
+}
+
+void InformationProtocolHandler::begin() {
+	Serial.println("EthernetInformationProtocolHandler over UDP running.");
+	this->client.begin(this->udpPort);
+}
+
+void InformationProtocolHandler::sendPacket() {
+//	Serial.print("SENDING UDP PACKET to: ");
+//	Serial.print(this->serverIP);
+//	Serial.print(" at port: ");
+//	Serial.print(this->serverPort);
+//
+	Serial.print(" SENSORS QUANTITY: ");
+	Serial.print(this->getRawpacket()[0], DEC);
+	Serial.print("\t RAWPACKET STATUS[1]: ");
+	Serial.print(this->getRawpacket()[1], DEC);
+	Serial.print("\t RAWPACKET STATUS[2]: ");
+	Serial.print(this->getRawpacket()[2], DEC);
+	Serial.print("\t RAWPACKET STATUS[3]: ");
+	Serial.println(this->getRawpacket()[3], DEC);
+
+	this->client.beginPacket(this->serverIP, this->serverPort);
+	this->client.write((char*)this->getRawpacket());
+	this->client.endPacket();
 }

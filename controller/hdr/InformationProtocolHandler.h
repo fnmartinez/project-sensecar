@@ -9,6 +9,8 @@
 #define INFORMATIONPROTOCOLHANDLER_H_
 
 #include <Arduino.h>
+#include <IPAddress.h>
+#include <Ethernet.h>
 #include <commons.h>
 
 #define FREE 0
@@ -23,15 +25,19 @@ struct information_packet {
 
 class InformationProtocolHandler {
 private:
+	IPAddress serverIP;
+	uint32_t serverPort;
+	uint32_t udpPort;
+	EthernetUDP client;
 	InfoPacket iPacket;
 	byte rawPacket[MAX_SENSORS + 2];
 public:
-	InformationProtocolHandler();
+	InformationProtocolHandler(IPAddress serverIP, uint32_t serverPort, uint32_t udpPort);
 	char getSensorsQty();
 	char * getSensorsStatus();
 	byte * getRawpacket();
-	virtual void begin()=0;
-	virtual void sendPacket() =0;
+	virtual void begin();
+	virtual void sendPacket();
 	virtual ~InformationProtocolHandler() {};
 
 	friend class InformationProtocolTranslator;

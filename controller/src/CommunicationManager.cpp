@@ -8,21 +8,26 @@
 #include <CommunicationManager.h>
 
 
-CommunicationManager::CommunicationManager(InformationProtocolHandler * infoPHandler, CommandProtocolHandler * cmdPHandler) {
+CommunicationManager::CommunicationManager(InformationProtocolHandler &infoPHandler, CommandProtocolHandler &cmdPHandler):
+	infoPHandler(infoPHandler), cmdPHandler(cmdPHandler){
 	this->infoPHandler = infoPHandler;
 	this->cmdPHandler = cmdPHandler;
-	Serial.print("infoPHandler:");
-	Serial.println((int)this->infoPHandler, HEX);
 	Ethernet.begin(default_MAC, default_IP);
-	Serial.println("Communication Module up and running.");
-	delay(2000);
-	this->infoPHandler->begin();
-	this->cmdPHandler->begin();
+//	this->infoPHandler.begin();
+//	this->cmdPHandler.begin();
+	Serial.println("Communication Module up.");
 }
 
-void CommunicationManager::informData(SensorManager * sm) {
-	InformationProtocolTranslator::translate(*(this->infoPHandler), sm);
-	this->infoPHandler->sendPacket();
+void CommunicationManager::informData(SensorManager sm) {
+	InformationProtocolTranslator::translate((this->infoPHandler), sm);
+	this->infoPHandler.sendPacket();
+}
+
+void CommunicationManager::begin() {
+	delay(2000);
+	this->infoPHandler.begin();
+	this->cmdPHandler.begin();
+	Serial.println("Communication Module running.");
 }
 
 void CommunicationManager::changeIP(IPAddress ip) {

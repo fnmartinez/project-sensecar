@@ -14,7 +14,7 @@
 
 class InformationProtocolTranslator {
 public:
-	static void translate(InformationProtocolHandler &iph, SensorManager * sm);
+	static void translate(InformationProtocolHandler &iph, SensorManager &sm);
 };
 
 #endif /* INFORMATIONPROTOCOLTRANSLATOR_H_ */

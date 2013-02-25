@@ -1,6 +1,9 @@
 #ifndef COMMANDPROTOCOLHANDLER_H
 #define COMMANDPROTOCOLHANDLER_H
 
+#include <stdlib.h>
+#include <Ethernet.h>
+
 #define OK_RESPONSE "+OK "
 #define ERROR_RESPONSE "-ERR "
 #define RESPONSE_TERMINATOR "\r\n.\r\n"
@@ -30,13 +33,16 @@ private:
 	Commands_t allCommands[TOTAL_COMMANDS];
 	char * commandsString[];
 	int totalCommand;
+	int port;
+	EthernetServer * server;
+	void respond(EthernetClient c, char * response, char * msg, char * terminator);
 public:
-	CommandProtocolHandler();
+	CommandProtocolHandler(int port);
 	Commands_t * getProtocolCommands();
 	char ** getProtocolCommandsString();
 	int getProtocolCommandsQuantity();
-	virtual void checkForClients() =0;
-	virtual void begin()=0;
+	virtual void checkForClients();
+	virtual void begin();
 	virtual ~CommandProtocolHandler();
 };
 

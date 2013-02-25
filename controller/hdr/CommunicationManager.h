@@ -22,21 +22,21 @@
 
 class CommunicationManager {
 private:
+	byte mac[MAC_OCTETS];
+	IPAddress myIP;
+	unsigned int cmdServerPort;
+	CommandProtocolHandler &cmdPHandler;
+	InformationProtocolHandler &infoPHandler;
+public:
 	static byte default_MAC[MAC_OCTETS];
 	static IPAddress default_IP;
 	static IPAddress default_mask;
 	static IPAddress default_gateway;
 	static IPAddress default_server_IP;
-	byte mac[MAC_OCTETS];
-	IPAddress myIP;
-	unsigned int cmdServerPort;
-	CommandProtocolHandler * cmdPHandler;
-	InformationProtocolHandler * infoPHandler;
-public:
-	CommunicationManager(InformationProtocolHandler * infoPHandler, CommandProtocolHandler * cmdPHandler);
-	//void begin();
+	CommunicationManager(InformationProtocolHandler &infoPHandler, CommandProtocolHandler &cmdPHandler);
+	void begin();
 	void checkIncommingComm();
-	void informData(SensorManager * sm);
+	void informData(SensorManager sm);
 	void changeIP(IPAddress ip);
 	void changePort(uint32_t port);
 	void changeServerIP(IPAddress ip);

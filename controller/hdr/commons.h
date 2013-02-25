@@ -16,5 +16,9 @@
 #define OCCUPYED 1
 #define OFF 2
 
+//typedef enum boolean {
+//	false,
+//	true
+//} boolean;
 
 #endif /* COMMONS_H_ */
