@@ -7,11 +7,9 @@
 
 #include <CommunicationManager.h>
 
-
-CommunicationManager::CommunicationManager(InformationProtocolHandler &infoPHandler, CommandProtocolHandler &cmdPHandler):
-	infoPHandler(infoPHandler), cmdPHandler(cmdPHandler){
-	this->infoPHandler = infoPHandler;
-	this->cmdPHandler = cmdPHandler;
+CommunicationManager::CommunicationManager(InformationProtocolHandler infoPHandler, CommandProtocolHandler cmdPHandler){
+	this->infoPHandler = &infoPHandler;
+	this->cmdPHandler = &cmdPHandler;
 	Ethernet.begin(default_MAC, default_IP);
 //	this->infoPHandler.begin();
 //	this->cmdPHandler.begin();
@@ -19,14 +17,14 @@ CommunicationManager::CommunicationManager(InformationProtocolHandler &infoPHand
 }
 
 void CommunicationManager::informData(SensorManager sm) {
-	InformationProtocolTranslator::translate((this->infoPHandler), sm);
-	this->infoPHandler.sendPacket();
+	InformationProtocolTranslator::translate(*(this->infoPHandler), sm);
+	this->infoPHandler->sendPacket();
 }
 
 void CommunicationManager::begin() {
 	delay(2000);
-	this->infoPHandler.begin();
-	this->cmdPHandler.begin();
+	this->infoPHandler->begin();
+	this->cmdPHandler->begin();
 	Serial.println("Communication Module running.");
 }
 
@@ -47,5 +45,5 @@ void CommunicationManager::changeServerPort(uint32_t port) {
 }
 
 void CommunicationManager::checkIncommingComm() {
-
+	this->cmdPHandler->checkForClients();
 }

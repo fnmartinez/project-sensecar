@@ -31,7 +31,7 @@ typedef enum Commands_enum Commands_t;
 class CommandProtocolHandler {
 private:
 	Commands_t allCommands[TOTAL_COMMANDS];
-	char * commandsString[];
+	char * commandsString[TOTAL_COMMANDS];
 	int totalCommand;
 	int port;
 	EthernetServer * server;

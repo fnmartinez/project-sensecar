@@ -13,10 +13,6 @@
 #include <Ethernet.h>
 #include <commons.h>
 
-#define FREE 0
-#define OCCUPIED 1
-#define OFF 2
-
 typedef struct information_packet InfoPacket;
 struct information_packet {
 	char sensors_qty;

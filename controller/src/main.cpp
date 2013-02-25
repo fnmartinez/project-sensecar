@@ -124,6 +124,7 @@ IPAddress CommunicationManager::default_IP(192,168,1,20);
 IPAddress CommunicationManager::default_mask(255,255,255,0);
 IPAddress CommunicationManager::default_gateway(192,168,1,10);
 IPAddress CommunicationManager::default_server_IP = CommunicationManager::default_gateway;
+
 DigitalPinSensor dSensors[SENSORS_QTY] = {
 		DigitalPinSensor(5, HIGH),
 		DigitalPinSensor(6, HIGH),
@@ -131,6 +132,7 @@ DigitalPinSensor dSensors[SENSORS_QTY] = {
 };
 
 InformationProtocolHandler iph(IPAddress(DEFAULT_SERVER_IP), DEFAULT_SERVER_PORT, DEFAULT_UDP_PORT);
+//InformationProtocolHandler iph(CommunicationManager::default_server_IP, DEFAULT_SERVER_PORT, DEFAULT_UDP_PORT);
 CommandProtocolHandler cph(DEFAULT_LISTENING_PORT);
 SensorManager sm(dSensors, SENSORS_QTY);
 CommunicationManager cm(iph, cph);
@@ -148,7 +150,6 @@ void setup() {
 }
 
 void loop() {
-
 	cm.checkIncommingComm();
 
 	sm.checkSensors();
@@ -179,6 +180,7 @@ int main(void) {
 	for(int i = 0; i < SENSORS_QTY; i++) {
 		pinMode(dSensors[i].getPin(), INPUT);
 	}
+
 
 	Serial.println("Sensor pins: ");
 	Serial.println(dSensors[0].getPin());

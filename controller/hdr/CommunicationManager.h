@@ -25,15 +25,15 @@ private:
 	byte mac[MAC_OCTETS];
 	IPAddress myIP;
 	unsigned int cmdServerPort;
-	CommandProtocolHandler &cmdPHandler;
-	InformationProtocolHandler &infoPHandler;
+	CommandProtocolHandler * cmdPHandler;
+	InformationProtocolHandler * infoPHandler;
 public:
 	static byte default_MAC[MAC_OCTETS];
 	static IPAddress default_IP;
 	static IPAddress default_mask;
 	static IPAddress default_gateway;
 	static IPAddress default_server_IP;
-	CommunicationManager(InformationProtocolHandler &infoPHandler, CommandProtocolHandler &cmdPHandler);
+	CommunicationManager(InformationProtocolHandler infoPHandler, CommandProtocolHandler cmdPHandler);
 	void begin();
 	void checkIncommingComm();
 	void informData(SensorManager sm);
@@ -42,6 +42,7 @@ public:
 	void changeServerIP(IPAddress ip);
 	void changeServerPort(uint32_t port);
 };
+
 
 //byte CommunicationManager::default_MAC[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
 //IPAddress CommunicationManager::default_IP(192,168,1,177);

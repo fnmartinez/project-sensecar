@@ -10,7 +10,7 @@
 InformationProtocolHandler::InformationProtocolHandler(IPAddress serverIP, uint32_t serverPort, uint32_t udpPort) {
 	this->iPacket.sensors_qty = MAX_SENSORS;
 	for(int i = 0; i < MAX_SENSORS; i++) {
-		this->iPacket.sensors_status[i] = FREE;
+		this->iPacket.sensors_status[i] = VACANT;
 	}
 
 //	this->rawPacket = (char*)&(this->iPacket);

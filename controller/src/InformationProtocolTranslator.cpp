@@ -7,7 +7,7 @@
 
 #include <InformationProtocolTranslator.h>
 
-void InformationProtocolTranslator::translate(InformationProtocolHandler &iph, SensorManager &sm) {
+void InformationProtocolTranslator::translate(InformationProtocolHandler iph, SensorManager sm) {
 
 	iph.iPacket.sensors_qty = sm.sensorsQty;
 
