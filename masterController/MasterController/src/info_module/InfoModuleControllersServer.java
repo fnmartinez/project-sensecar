@@ -5,6 +5,8 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.SocketException;
 
+import utils.State;
+
 public class InfoModuleControllersServer implements Runnable {
 
 	private DatagramSocket socket;
@@ -39,10 +41,10 @@ public class InfoModuleControllersServer implements Runnable {
 				socket.receive(packet);
 				byte[] data = packet.getData();
 				int quantity = ((char)data[0]) - 48;
-				System.out.println("quantity: " + (char)data[0]);
-				System.out.println("byte[0] = " + (char)data[0]);
-				System.out.println("byte[1] = " + (char)data[1]);
-				System.out.println("byte[2] = " + (char)data[2]);
+//				System.out.println("quantity: " + (char)data[0]);
+//				System.out.println("byte[0] = " + (char)data[0]);
+//				System.out.println("byte[1] = " + (char)data[1]);
+//				System.out.println("byte[2] = " + (char)data[2]);
 //				System.out.println("byte[3] = " + data[3]);
 				str.append("Data from:");
 				str.append(packet.getAddress());
@@ -51,17 +53,28 @@ public class InfoModuleControllersServer implements Runnable {
 					str.append("Sensor ");
 					str.append(i+1);
 					str.append(" state is: ");
-					str.append((char)data[i+1]);
+					str.append(getStateDescription((char)data[i+1]));
 					str.append("\n");
 				}
 				str.append("\r\n");
-				System.out.println(str.toString());
+//				System.out.println(str.toString());
 				String message = str.toString();
 				infoServer.addMessage(message.toString());
 			} while (!Thread.interrupted());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}
+	}
+	
+	private String getStateDescription(int code) {
+		int codeNum = code - 48;
+		if(codeNum == State.FREE.getCode()) {
+			return State.FREE.getDescription();
+		} else if(codeNum == State.OCCUPIED.getCode()) {
+			return State.OCCUPIED.getDescription();
+		} else {
+			return State.OFF.getDescription();
 		}
 	}
 }
