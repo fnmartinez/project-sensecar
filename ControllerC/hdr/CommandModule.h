@@ -6,8 +6,8 @@
 #define OK_RESPONSE "+OK "
 #define ERROR_RESPONSE "-ERR "
 #define RESPONSE_TERMINATOR "\r\n.\r\n"
-#define MAX_COMMAND_SIZE 257
-#define MAX_RESPONSE_SIZE 257
+#define MAX_COMMAND_SIZE 256
+#define MAX_RESPONSE_SIZE 256
 #define COMMAND_MAX_SIZE 16
 #define TOTAL_COMMANDS 11
 
@@ -27,8 +27,21 @@ enum Commands_enum {
 
 typedef enum Commands_enum Commands_t;
 
+
 void beginTCP(int port);
+void respond(EthernetClient c, char * response, char * msg, char * terminator) ;
 void verifyIncomingCommand();
-void respond(EthernetClient c, char * response, char * msg, char * terminator);
+
+void turnOn();
+void turnOff();
+void showNetworkInfo();
+void setServerIp();
+void setServerPort();
+void sensorOn();
+void sensorOff();
+void getStatus();
+void informStatus();
+void exit();
+
 
 #endif /* COMMAND_MODULE_H_ */

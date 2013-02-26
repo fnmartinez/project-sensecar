@@ -1,10 +1,24 @@
-#include <main.h>
+
+#include "InfoModule.h"
+#include "SensorModule.h"
+#include "CommandModule.h"
+#include "commons.h"
+
+
+#include <SPI.h>
+#include <Ethernet.h>
+#include <Arduino.h>
+#include <IPAddress.h>
+#include <EthernetUdp.h>
+#include <EthernetServer.h>
 
 #define DEFAULT_SERVER_IP 192,168,1,10
 #define DEFAULT_SERVER_PORT 2002
 #define DEFAULT_UDP_PORT 2002
 #define DEFAULT_TCP_PORT 2001
 #define SENSORS_QTY 3
+
+bool sensorIsOn;
 
 //SensorManager * sm;
 //CommunicationManager * cm;
@@ -38,7 +52,7 @@ void setup() {
 	}
 
 	Ethernet.begin(default_MAC, default_IP);
-	delay(1000);
+//	delay(1000);
 	beginUDP(DEFAULT_UDP_PORT);
 	beginTCP(DEFAULT_TCP_PORT);
 }
@@ -207,6 +221,8 @@ int main(void) {
 	init();
 	setup();
 	initSensors(sensorsStatus, SENSORS_QTY);
+
+	sensorIsOn = true;
 
 	do {
 		loop();
