@@ -1,4 +1,5 @@
-#include <CommandModule.h>
+#include "CommandModule.h"
+#include "commons.h"
 
 Commands_t commands[] = {
 	NOOP,
@@ -132,11 +133,11 @@ void verifyIncomingCommand() {
 
 
 void turnOn() {
-
+//	sensorIsOn = true;
 }
 
 void turnOff() {
-
+//	sensorIsOn = false;
 }
 
 void showNetworkInfo() {
@@ -168,6 +169,6 @@ void informStatus() {
 }
 
 void exit(EthernetClient client) {
-	respond(client, OK_RESPONSE, "BYE!", RESPONSE_TERMINATOR);
+	respond(client, OK_RESPONSE, "BYEEE!", RESPONSE_TERMINATOR);
 	client.stop();
 }

@@ -1,4 +1,4 @@
-#include <InfoModule.h>
+#include "InfoModule.h"
 
 EthernetUDP udpClient;
 
@@ -18,6 +18,6 @@ void preparePacketToSend(char * buf, int * sensorStatus, int quantity) {
 	for (int i = 0; i < quantity; i++) {
 		buf[i+1] = (char) (sensorStatus[i] + 48);
 	}
-//	buf[quantity + 1] = '\0';
-//	buf[quantity + 2] = '\n';
+	buf[quantity + 1] = '\0';
+	buf[quantity + 2] = '\n';
 }

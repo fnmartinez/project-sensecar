@@ -7,5 +7,4 @@
 #define OCCUPYED 1
 #define OFF 2
 
-
 #endif /* COMMONS_H_ */
