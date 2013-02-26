@@ -1,6 +1,6 @@
-#include <commons.h>
 #include <Ethernet.h>
 #include <SensorModule.h>
+#include <commons.h>
 
 void initSensors(int * sensorsStatus, int sensorsQty) {
 	for(int i = 0; i < sensorsQty; i++) {
