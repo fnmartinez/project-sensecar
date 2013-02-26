@@ -1,10 +1,3 @@
-/*
- * commons.h
- *
- *  Created on: 16/02/2013
- *      Author: facundo
- */
-
 #ifndef COMMONS_H_
 #define COMMONS_H_
 
