@@ -1,6 +1,8 @@
 #include "CommandModule.h"
 #include "commons.h"
 
+extern bool sensorIsOn;
+
 Commands_t commands[] = {
 	NOOP,
 	TURN_ON,
@@ -133,11 +135,11 @@ void verifyIncomingCommand() {
 
 
 void turnOn() {
-//	sensorIsOn = true;
+	sensorIsOn = true;
 }
 
 void turnOff() {
-//	sensorIsOn = false;
+	sensorIsOn = false;
 }
 
 void showNetworkInfo() {
@@ -168,7 +170,7 @@ void informStatus() {
 
 }
 
-void exit(EthernetClient client) {
-	respond(client, OK_RESPONSE, "BYEEE!", RESPONSE_TERMINATOR);
-	client.stop();
+void exit() {
+//	respond(client, OK_RESPONSE, "BYEEE!", RESPONSE_TERMINATOR);
+//	client.stop();
 }

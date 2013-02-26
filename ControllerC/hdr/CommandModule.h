@@ -6,8 +6,8 @@
 #define OK_RESPONSE "+OK "
 #define ERROR_RESPONSE "-ERR "
 #define RESPONSE_TERMINATOR "\r\n.\r\n"
-#define MAX_COMMAND_SIZE 257
-#define MAX_RESPONSE_SIZE 257
+#define MAX_COMMAND_SIZE 256
+#define MAX_RESPONSE_SIZE 256
 #define COMMAND_MAX_SIZE 16
 #define TOTAL_COMMANDS 11
 
@@ -41,7 +41,7 @@ void sensorOn();
 void sensorOff();
 void getStatus();
 void informStatus();
-void exit(EthernetClient client);
+void exit();
 
 
 #endif /* COMMAND_MODULE_H_ */

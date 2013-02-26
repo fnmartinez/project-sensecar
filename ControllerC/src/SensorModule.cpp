@@ -1,5 +1,7 @@
 #include "SensorModule.h"
 
+extern bool sensorIsOn;
+
 void initSensors(int * sensorsStatus, int sensorsQty) {
 	for(int i = 0; i < sensorsQty; i++) {
 		sensorsStatus[i] = VACANT;
@@ -9,7 +11,7 @@ void initSensors(int * sensorsStatus, int sensorsQty) {
 bool checkSensors(int * sensors, int sensorsqty, int * sensorsStatus) {
 //	Serial.print("CHECKING SENSORS for quantity: ");
 //	Serial.println(sensorsqty, DEC);
-//	if(sensorIsOn) {
+	if(sensorIsOn) {
 		bool sensorsChanged = false;
 
 		for(int i = 0; i < sensorsqty; i++) {
@@ -31,7 +33,7 @@ bool checkSensors(int * sensors, int sensorsqty, int * sensorsStatus) {
 					(pinStatus == false && sensorsStatus[i] == OCCUPYED))) {
 				sensorsChanged = true;
 
-				Serial.println("SENSORS CHANGED!!!!");
+				Serial.println("SENSORS CHANGED!!!! adasdsad");
 			}
 
 	//		Serial.print("After: SensorStatus[");
@@ -43,9 +45,9 @@ bool checkSensors(int * sensors, int sensorsqty, int * sensorsStatus) {
 		}
 
 		return sensorsChanged;
-//	} else {
-//		return false;
-//	}
+	} else {
+		return false;
+	}
 
 }
 
