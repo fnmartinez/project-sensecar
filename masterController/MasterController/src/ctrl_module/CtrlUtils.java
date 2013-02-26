@@ -48,7 +48,7 @@ public class CtrlUtils {
 			return command[0] + "\n\r";
 		} else if(command[0].equalsIgnoreCase(Commands.TURN_OFF.name())) {
 			return command[0] + "\n\r";
-		} else if(command[0].equalsIgnoreCase(Commands.EXIT.name())) {
+		} /*else if(command[0].equalsIgnoreCase(Commands.EXIT.name())) {
 			return command[0] + "\n\r";
 		} else if(command[0].equalsIgnoreCase(Commands.SHOW_NETWORK_INFO.name())) {
 			return command[0] + "\n\r";
@@ -72,7 +72,7 @@ public class CtrlUtils {
 			return command[0] + "\n\r";
 		} else if(command[0].equalsIgnoreCase(Commands.INFORM_STATUS.name())) {
 			return command[0] + "\n\r";
-		} else if(command[0].equalsIgnoreCase(Commands.HELP.name())) {
+		}*/ else if(command[0].equalsIgnoreCase(Commands.HELP.name())) {
 			return Commands.HELP.name();
 		} else {
 			return badCommandErrorMessage;
@@ -92,18 +92,19 @@ public class CtrlUtils {
 	public String help() {
 		StringBuilder strBuilder = new StringBuilder();
 		strBuilder.append("These are the available commands: \n\n");
-		strBuilder.append(Commands.SELECT_DEVICE.name() + " <device_ip>\tSelects the device to send the commands (WARNING: You must use this command to " +
-				"select a device before using any other command, otherwise the default ip is used)\n");
+		strBuilder.append(Commands.HELP.name() + "\t\t\t\tPrints this message\n");
 		strBuilder.append(Commands.TURN_ON.name() + "\t\t\t\tTurns on the selected device\n");
 		strBuilder.append(Commands.TURN_OFF.name() + "\t\t\tTurns off the selected device\n");
-		strBuilder.append(Commands.EXIT.name() + "\t\t\t\tTurns on the selected device\n");
-		strBuilder.append(Commands.SHOW_NETWORK_INFO.name() + "\t\tSets the network information of the selected device\n");
-		strBuilder.append(Commands.SET_SERVER_IP.name() + " <ip>\t\tSets the ip used by the selected device to send the sensors information (Ip of the information server)\n");
-		strBuilder.append(Commands.SET_SERVER_PORT.name() + " <port>\t\tSets the port used by the selected device to send the sensors information (Port of the information server)\n");
-		strBuilder.append(Commands.SENSOR_ON.name() + " <sensorNumber>\tTurns on a specific sensor in the selected device\n");
-		strBuilder.append(Commands.SENSOR_OFF.name() + " <sensorNumber>\tTurns off a specific sensor in the selected device\n");
-		strBuilder.append(Commands.GET_STATUS.name() + "\t\t\tReturns the sensor status of the selected device\n");
-		strBuilder.append(Commands.INFORM_STATUS.name() + "\t\t\tMakes the selected device to send the sensors information to the information server\n");
+		strBuilder.append(Commands.SELECT_DEVICE.name() + " <device_ip>\tSelects the device to send the commands (WARNING: You must use this command to " +
+				"select a device before using any other command, otherwise the default ip is used)\n");
+//		strBuilder.append(Commands.EXIT.name() + "\t\t\t\tTurns on the selected device\n");
+//		strBuilder.append(Commands.SHOW_NETWORK_INFO.name() + "\t\tSets the network information of the selected device\n");
+//		strBuilder.append(Commands.SET_SERVER_IP.name() + " <ip>\t\tSets the ip used by the selected device to send the sensors information (Ip of the information server)\n");
+//		strBuilder.append(Commands.SET_SERVER_PORT.name() + " <port>\t\tSets the port used by the selected device to send the sensors information (Port of the information server)\n");
+//		strBuilder.append(Commands.SENSOR_ON.name() + " <sensorNumber>\tTurns on a specific sensor in the selected device\n");
+//		strBuilder.append(Commands.SENSOR_OFF.name() + " <sensorNumber>\tTurns off a specific sensor in the selected device\n");
+//		strBuilder.append(Commands.GET_STATUS.name() + "\t\t\tReturns the sensor status of the selected device\n");
+//		strBuilder.append(Commands.INFORM_STATUS.name() + "\t\t\tMakes the selected device to send the sensors information to the information server\n");
 		strBuilder.append('\n');
 		return strBuilder.toString();
 	}

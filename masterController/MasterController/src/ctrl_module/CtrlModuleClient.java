@@ -47,6 +47,7 @@ public class CtrlModuleClient implements Runnable {
 						for (int i = 0; i < size; i++) {
 							cmd.append((char) buf[i]); 
 						}
+						cmd.append('\n');
 						ctrlModuleServer.addMessage(cmd.toString());
 					}
 					serverSocket.close();
