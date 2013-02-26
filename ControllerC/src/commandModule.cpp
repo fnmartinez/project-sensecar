@@ -43,71 +43,131 @@ void respond(EthernetClient c, char * response, char * msg, char * terminator) {
 }
 
 void verifyIncomingCommand() {
-	bool firstContact = true;
-	char * response;
-	char message[MAX_RESPONSE_SIZE];
 	Commands_t currentState = NOOP;
 	char incommingCmd[MAX_COMMAND_SIZE];
 
 	EthernetClient client = server->available();
 
-	while(client.connected()) {
-		if(firstContact) {
-			respond(client, OK_RESPONSE, "HI!", RESPONSE_TERMINATOR);
-			firstContact = false;
-		}
-		if(client.available() > 0) {
+	if(client) {
+		Serial.println("NEW CLIENT");
+//		while(client.connected() && client.available()) {
 			int i = 0;
-			bool terminatorFound = false;
 			do {
 				incommingCmd[i] = client.read();
-				if(incommingCmd[i] == '\n') {
-					terminatorFound = true;
-					incommingCmd[i] = '\0';
-				}
-			} while (++i < MAX_COMMAND_SIZE && !terminatorFound);
+				i ++;
+			} while (incommingCmd[i-1] != '\n');
+			incommingCmd[i-1] = ' ';
+			Serial.println("FINISHED READING");
+			char * splittedCmd;
+			splittedCmd = strtok(incommingCmd, " ");
 
-			for(int i = TOTAL_COMMANDS -1;	i>0; i--) {
-				if(strncasecmp(commandsString[i], incommingCmd, strlen(commandsString[i])) == 0){
+			for(int i = 0; i < TOTAL_COMMANDS; i++) {
+				Serial.println(commandsString[i]);
+				Serial.println(splittedCmd);
+				if(strcasecmp(commandsString[i], splittedCmd) == 0) {
 					currentState = commands[i];
 				}
 			}
 
-			switch(currentState) {
-			case NOOP:
-				respond(client, OK_RESPONSE, "HI!", RESPONSE_TERMINATOR);
-				break;
-			case TURN_ON:
-				break;
-			case TURN_OFF:
-				break;
-			case SHOW_NETWORK_INFO:
-				response = OK_RESPONSE;
 
-				break;
-			case SET_SERVER_IP:
-				break;
-			case SET_SERVER_PORT:
-				break;
-			case SENSOR_ON:
-				break;
-			case SENSOR_OFF:
-				break;
-			case GET_STATUS:
-				break;
-			case INFORM_STATUS:
-				break;
-			case EXIT:
-				response = OK_RESPONSE;
-				strcpy(message, "BYE!");
-				respond(client, response, message, RESPONSE_TERMINATOR);
-				client.stop();
-				break;
-			default:
-				break;
+			Serial.println("------------------------------");
+			Serial.print("currentState: ");
+			Serial.println(currentState);
+			if(currentState == NOOP) {
+				Serial.println("ES NOOP");
 			}
-		}
+			Serial.println("------------------------------");
+
+			switch(currentState) {
+				case NOOP:
+					respond(client, OK_RESPONSE, "NOOP!", RESPONSE_TERMINATOR);
+					break;
+				case TURN_ON:
+					turnOn();
+					respond(client, OK_RESPONSE, "TURN_ON!", RESPONSE_TERMINATOR);
+					break;
+				case TURN_OFF:
+					turnOff();
+					respond(client, OK_RESPONSE, "TURN_OFF!", RESPONSE_TERMINATOR);
+					break;
+				case SHOW_NETWORK_INFO:
+					showNetworkInfo();
+					respond(client, OK_RESPONSE, "SHOW_NETWORK_INFO!", RESPONSE_TERMINATOR);
+					break;
+				case SET_SERVER_IP:
+					setServerIp();
+					respond(client, OK_RESPONSE, "SET_SERVER_IP!", RESPONSE_TERMINATOR);
+					break;
+				case SET_SERVER_PORT:
+					setServerPort();
+					respond(client, OK_RESPONSE, "SET_SERVER_PORT!", RESPONSE_TERMINATOR);
+					break;
+				case SENSOR_ON:
+					sensorOn();
+					respond(client, OK_RESPONSE, "SENSOR_ON!", RESPONSE_TERMINATOR);
+					break;
+				case SENSOR_OFF:
+					sensorOff();
+					respond(client, OK_RESPONSE, "SENSOR_OFF!", RESPONSE_TERMINATOR);
+					break;
+				case GET_STATUS:
+					getStatus();
+					respond(client, OK_RESPONSE, "GET_STATUS!", RESPONSE_TERMINATOR);
+					break;
+				case INFORM_STATUS:
+					informStatus();
+					respond(client, OK_RESPONSE, "INFORM_STATUS!", RESPONSE_TERMINATOR);
+					break;
+				case EXIT:
+					exit(client);
+//					respond(client, OK_RESPONSE, "EXIT!", RESPONSE_TERMINATOR);
+					break;
+				default:
+					break;
+			}
+
+
 	}
 }
 
 
+void turnOn() {
+
+}
+
+void turnOff() {
+
+}
+
+void showNetworkInfo() {
+
+}
+
+void setServerIp() {
+
+}
+
+void setServerPort() {
+
+}
+
+void sensorOn() {
+
+}
+
+void sensorOff() {
+
+}
+
+void getStatus() {
+
+}
+
+void informStatus() {
+
+}
+
+void exit(EthernetClient client) {
+	respond(client, OK_RESPONSE, "BYE!", RESPONSE_TERMINATOR);
+	client.stop();
+}

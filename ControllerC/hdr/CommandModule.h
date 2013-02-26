@@ -27,8 +27,21 @@ enum Commands_enum {
 
 typedef enum Commands_enum Commands_t;
 
+
 void beginTCP(int port);
+void respond(EthernetClient c, char * response, char * msg, char * terminator) ;
 void verifyIncomingCommand();
-void respond(EthernetClient c, char * response, char * msg, char * terminator);
+
+void turnOn();
+void turnOff();
+void showNetworkInfo();
+void setServerIp();
+void setServerPort();
+void sensorOn();
+void sensorOff();
+void getStatus();
+void informStatus();
+void exit(EthernetClient client);
+
 
 #endif /* COMMAND_MODULE_H_ */
